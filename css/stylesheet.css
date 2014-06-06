@@ -1,0 +1,486 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Reset
+2.0 - Helpers
+3.0 - Home
+	3.1 - Main Content
+	3.2 - Video
+	3.3 - Bottom Content
+		3.3.1 - Landing links
+	3.4 - Info Container
+		3.4.1 - Slider section
+		3.4.2 - Quotes section
+		3.4.3 - Be a story teller and subscribe section
+		3.4.4 - Partners and social logos section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	font-size: 14px;
+	position: relative;
+	font-family: 'Futura-Book';
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #93111D;
+}
+
+/*--------------------------------------------------------------
+2.0 - Helpers
+--------------------------------------------------------------*/
+.uppertext {
+	text-transform: uppercase;
+}
+
+.red-text {
+	color: #93111d;
+}
+
+.sec-text {
+	font-family: 'Gill Sans MT Italic';
+	color: #808284;
+}
+
+/*--------------------------------------------------------------
+3.0 - Home
+--------------------------------------------------------------*/
+.main-container {
+	min-height: 100%;
+	background: url(../images/WEB_home_BG_1920_milreu2.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 5%;
+}
+
+/* 3.1 - Main Content */
+.intro-logo {
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+	height: 210px;
+	background: url(../images/sprite.png) no-repeat -178px 0px;
+}
+
+.intro-text {
+	color: #fff;
+	font-size: 23px;
+	width: 384px;
+	margin: 30px auto 30px;
+	text-shadow: 0 0 20px #000;
+	text-align: center;
+}
+
+.video-link {
+	background: url(../images/WEB_home_BTN_play.png) no-repeat 0px -48px;
+	display: block;
+	margin: 0 auto;
+	width: 170px;
+	height: 15%;
+	color: #fff;
+	font-size: 16px;
+	padding-top: 90px;
+	text-transform: uppercase;
+	text-shadow: 0 0 20px #000;
+	font-family: 'Futura-Medium';
+	background-size: 100%;
+}
+
+/* 3.2 - Video */
+.video-container {
+	width: 80%;
+	height: 610px;
+	position: fixed;
+	display: none;
+	z-index: 999;
+	padding: 2px;
+	background-color: #000;
+	border-radius: 4px;
+	top:20px;
+}
+
+.close {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	font-size: 17px;
+	font-weight: bold;
+	background-color: #fff;
+	color: #696969;
+	padding: 3px 9px;
+	border-radius: 50%;
+	border: 2px solid #696969;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	z-index: 900;
+	background-color: #000;
+	display: none;
+}
+
+/* 3.3 - Bottom Content */
+.bottom-content {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+}
+
+
+	/* 3.3.1 - Landing links */
+	.landing-logos {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.supLx, .indCriativas {	
+		background: url(../images/sprite.png) no-repeat;
+		display: inline-block;
+		width: 90px;
+		height: 70px;	
+		margin-left: 20px;
+	}
+
+	.supLx {
+		background-position: -470px -110px;
+	}
+
+	.indCriativas {	
+		background-position: -470px -15px;
+	}
+
+	.slide-down {
+		display: block;
+		margin: 0 auto;
+		width: 100px;
+		height: 90px;
+		background: url(../images/sprite.png) no-repeat  -302px -210px;
+		margin: 0 auto;
+	}
+
+	.applestore-link {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 136px;
+		height: 40px;
+		background: url(../images/sprite.png) no-repeat -222px -332px;
+	}
+
+/* 3.4 - Info Container */
+.info-subcontainer, .quotes-subcontainer {
+	position: relative;
+	border-top: 1px solid #bbbdc0;
+	padding: 40px 0;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	color: #6d6e70
+}
+
+.info-subcontainer:before, .divider-icon {
+	content: "";
+	width: 16px;
+	height: 16px;
+	background: url(../images/sprite.png) no-repeat -680px -10px;
+	position: absolute;
+	top: -8px;
+	left: 49%;
+}
+
+.divider-icon {
+	position: relative;
+	display: block;
+	top: 0;
+}
+
+	/* 3.4.1 - Slider section */
+	.ST-small-logo {
+		display: block;
+		margin: 40px auto 10px;
+		width: 46px;
+		height: 46px;
+		background: url(../images/sprite.png) no-repeat -476px -310px;
+	}
+
+	.info-slider-container {
+		position: relative;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.nav-arrow {
+		background: url(../images/sprite.png) no-repeat;
+		position: absolute;
+		top: 210px;
+		width: 90px;
+		height: 90px;
+	}
+
+	.prev {
+		background-position: -575px 0px;
+	}
+
+	.next {	
+		background-position: -575px -95px;
+		right: 0;
+	}
+
+	.info-slider {
+		position: relative;
+		width: 75%;
+		height: 460px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.image, .slide-content {
+		position: absolute;
+		text-align: center;
+		height: 100%;
+		vertical-align: top;
+	}
+
+	.image {
+		width: 40%;
+		left: 0;
+		z-index: 1;
+	}
+
+	.phone {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url(../images/sprite.png) no-repeat -675px -20px;
+		z-index: 1;
+	}
+
+	.phone-container {
+		height: 100%;
+		width: 210px;
+		position: absolute;
+		top: 0;
+		left: 52px;
+		overflow: hidden;
+	}
+
+	.image ul {
+		position: absolute;
+		top: 150px;
+		left: 0;
+		width: 1000px;
+		text-align: left;
+	}
+
+	.image img {
+		width: 100%
+	}
+
+	.image li, .slide-content li {
+		display: inline-block;
+	}
+
+	.image li {
+		width: 210px;
+		text-align: left;
+	}
+
+	.slide-content {
+		width: 53%;
+		right: 0;
+		padding: 70px 30px 20px;
+		overflow: hidden;
+	}
+
+	.content-list li:first-of-type {
+		display: block;
+		left: 0;
+	}
+
+	.content-list li {
+		position: absolute;
+		left: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.first-slide-icon, .second-slide-icon, .third-slide-icon {
+		background: url(../images/sprite.png) no-repeat;
+		display: block;
+		width: 170px;
+		height: 120px;
+		margin: 0 auto 10px;
+	}
+
+	.second-slide-icon {
+		background-position: 0px -125px;
+	}
+
+	.third-slide-icon {
+		background-position: 0px -250px;
+	}
+
+	.slide-content .title {
+		font-family: 'Futura-Medium';
+		text-transform: uppercase;
+		font-size: 24px;
+		width: 185px;
+		margin: 0 auto;
+		color: #231f20;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		color: #808284;
+		margin-top: 20px;
+		padding: 0 50px;
+		font-size: 15px;
+	}
+
+	.info-slider .applestore-link {
+		position: relative;
+		display: block;
+		right: 0;
+		margin: 12px auto 0;
+	}
+
+	.slider-nav {
+		position: absolute;
+		left: 0;
+		bottom: 10px;
+	}
+
+	.slider-nav li {
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #999;
+	}
+
+	.slider-nav .active {
+		background-color: #333
+	}
+
+	/* 3.4.2 - Quotes section */
+	.quote {
+		margin: 30px auto;
+	}
+
+	.quote q {
+		font-size: 20px;
+		margin-bottom: 15px;
+		display: block;
+		color: #58585b;
+	}
+
+	/* 3.4.3 - Be a story teller and subscribe section */
+	.info-subcontainer .upper {
+		text-transform: uppercase;
+		font-size: 17px;
+		font-family: 'Futura-Medium';
+	}
+
+	.info-subcontainer .text, .info-subcontainer .textMT {
+		width: 58%;
+		margin: 0 auto;
+		color: #8b8b8b;
+		margin-bottom: 20px;
+		font-size: 15px;
+	}
+
+	.info-subcontainer .textMT {  /* text with margin top */
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+
+	.faces-icon {
+		position: absolute;
+		left: 25px;
+		top: 35px;
+		display: block;
+		width: 140px;
+		height: 95px;
+		background: url(../images/sprite.png) no-repeat -428px -178px;
+	}
+
+	/* 3.4.4 - Partners and social logos section */
+	.partners-logos {
+		padding-top: 15px;
+	}
+
+	.partners-logos li {
+		background: url(../images/sprite.png) no-repeat;
+		display: inline-block;
+		height: 100px;
+		width: 25%;
+		margin: 0 2%;
+	}
+
+	.partners-logos li:first-of-type {
+		background-position: 28px -376px;
+	}
+
+	.partners-logos li:nth-of-type(2) {
+		background-position: -185px -376px;
+	}
+
+	.partners-logos li:nth-of-type(3) {
+		background-position: -388px -376px;
+	}
+
+	.social-logos li {
+		display: inline-block;
+		margin: 0;
+		width: 18%;
+		vertical-align: top;
+	}
+
+	.social-logos li a {
+		background: url(../images/sprite.png) no-repeat;
+		display: block;
+		height: 80px;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.social-logos  li:first-of-type a {
+		background-position: -568px -175px;
+		margin-top: 16px;
+	}
+
+	.social-logos  li:nth-of-type(2) a {
+		background-position: -568px -248px;
+	}
+
+	.social-logos  li:nth-of-type(3) a {
+		background-position: -568px -317px;
+	}
+
+	.social-logos  li:nth-of-type(4) a {
+		background-position: -568px -378px;
+	}
+
+	.social-logos li p {
+		margin-bottom: 5px;
+	}

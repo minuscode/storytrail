@@ -1,80 +1,156 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Story Trail</title>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/js-functions.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="main-container">
+    <span class="intro-logo"></span>
+		<p class="intro-text">Video trails by people showing you<br> the local places they know and love</p>
+    <a href="#" class="video-link">
+      <span>watch the trailer</span>
+    </a>
+    <div class="video-container">
+      <!--<iframe class="video" width="100%" height="600" src="http://www.youtube.com/embed/oavMtUWDBTM" frameborder="0" allowfullscreen></iframe>-->
+      <video id="video" width="100%" height="100%" controls>
+        <source src="videos/sample.m4v" type="video/mp4">
+        <p class="Error_Text">Sorry, your browser does not support the video tag.</p>
+      </video>
+      <a href="/" class="close">x</a>
+    </div>
+    <div class="bottom-content">
+      <div class="landing-logos">
+        <span class="supLx"></span>
+        <span class="indCriativas"></span>
+      </div>
+      <a href="/" class="slide-down"></a>
+      <a href="/" class="applestore-link"></a>
+    </div>
+  </div>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Storytrail.github.io : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Storytrail.github.io</title>
-  </head>
-
-  <body>
-  <p>test</p>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/luisrita/storytrail.github.io">View on GitHub</a>
-
-          <h1 id="project_title">Storytrail.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/luisrita/storytrail.github.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/luisrita/storytrail.github.io/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+  <!-- Slider section -->
+  <div class="info-container">
+    <span class="ST-small-logo"></span>
+    <div class="info-slider-container">
+      <a class="nav-arrow prev" href="/"></a>
+      <a class="nav-arrow next" href="/"></a>
+      <div class="info-slider">
+        <div class="image">
+          <div class="phone"></div>
+          <div class="phone-container">
+            <ul class="js-slide">
+              <li class="first-screen active">
+                <img src="images/phone_bg-01.png">
+              </li>
+              <li class="second-screen">
+                <img src="images/phone_bg-02.png">
+              </li>
+              <li class="third-screen">
+                <img src="images/phone_bg-03.png">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide-content">
+          <ul class="js-slide content-list">
+            <li class="active">
+              <span class="first-slide-icon"></span>
+              <p class="title">Download our free app</p>
+              <p>Download our free iPhone app from the App Store! Android coming soon!</p>
+              <a href="#" class="applestore-link"></a>
+            </li>
+            <li>
+              <span class="second-slide-icon"></span>
+              <p class="title">Choose a story trail</p>
+              <p>From our app browse select a nearby story featured by a passionate storyteller.</p>
+              <a href="#" class="applestore-link"></a>
+            </li>
+            <li>
+              <span class="third-slide-icon"></span>
+              <p class="title">walk and enjoy</p>
+              <p>Our storyteller will take you around a walking tour whilst revealing exciting stories and curiosities!</p>
+              <a href="#" class="applestore-link"></a>
+            </li>
+          </ul>
+          <ul class="slider-nav">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <!-- Quotes section -->
+    <div class="quotes-subcontainer">
+      <div class="quote">
+        <q>A reference for travellers lovers.</q>
+        <p class="name">Silvana Bessone,</p>
+        <p class="sec-text">Director of Coach Museum</p>
+      </div>
+      <span class="divider-icon"></span>
+      <div class="quote">
+        <q>They show you what others just talk about!</q>
+        <p class="name">Jason Pascoe,</p>
+        <p class="sec-text">Director of Exciting Space</p>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Storytrail.github.io maintained by <a href="https://github.com/luisrita">luisrita</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <!-- Subscribe section -->
+    <div class="info-subcontainer">
+      <p class="upper">Subscribe <a href="/" class="red-text">here</a> to our news! :)</p>
     </div>
 
+    <!-- Patners section -->
+    <div class="info-subcontainer">
+      <p>Our partners</p>
+      <ul class="partners-logos">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
 
+    <!-- Story tellers section -->
+    <div class="info-subcontainer story-tellers">
+      <span class="faces-icon"></span>
+      <p class="upper">Do you want to <span class="red-text">be a story teller</span> in your city?</p>
+      <p class="textMT">We are actively seeking storytellers to help us expand our geographical range. If you would like to create a StoryTrail about your city then please contact us at: <a href="mailto:info@StoryTrail.co">info@StoryTrail.co</a></p>
+    </div>
 
-  </body>
+    <!-- Social logos section -->
+    <div class="info-subcontainer">
+      <ul class="social-logos">
+        <li>
+          <a href="https://www.facebook.com/StoryTrail" class="logo" target="blank"></a>
+        </li><!--
+     --><li class="sec-text">
+          <p>A project of:</p>
+          <a href="http://www.excitingspace.com" class="logo" target="blank"></a>
+        </li><!--
+     --><li class="sec-text">
+          <p>Award winner:</p>
+          <a href="http://www.industriascriativas.com/PremioDestaques.aspx" class="logo" target="blank"></a>
+        </li><!--
+     --><li class="sec-text">
+          <p>Member of:</p>
+          <a href="http://startuplisboa.com" class="logo" target="blank"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="info-subcontainer">
+      <p class="sec-text">Copyright &#169; 2014 Exciting Space</p>
+    </div>
+
+  </div>
+
+  <div id="mask" class="mask"></div>
+
+</body>
 </html>

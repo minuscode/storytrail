@@ -1,0 +1,86 @@
+
+/*@font-face {
+  font-family: 'FuturaLightBT';
+  src: url('../font/FuturaLightBT.eot');
+  src: local('FuturaLightBT'), 
+         url('../font/FuturaLightBT.woff') format('woff'), 
+         url('../font/FuturaLightBT.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'futura-light';
+  src: url('../fonts/futura-light.eot');
+  src: url('../fonts/futura-light.eot?') format('eot'),
+       url('../fonts/futura-light.woff') format('woff'),
+       url('../fonts/futura-light.ttf')  format('truetype'),
+       url('../fonts/futura-light.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'futura-book';
+  src: url('../fonts/futura-book.eot');
+  src: url('../fonts/futura-book.eot?') format('eot'),
+       url('../fonts/futura-book.woff') format('woff'),
+       url('../fonts/futura-book.ttf')  format('truetype'),
+       url('../fonts/futura-book.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'futura-bold';
+  src: url('../fonts/futura-bold.eot');
+  src: url('../fonts/futura-bold.eot?') format('eot'),
+       url('../fonts/futura-bold.woff') format('woff'),
+       url('../fonts/futura-bold.ttf')  format('truetype'),
+       url('../fonts/futura-bold.svg') format('svg');
+}
+*/
+
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('../fonts/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Futura-Bold.woff') format('woff'),
+       url('../fonts/Futura-Bold.ttf')  format('truetype'),
+       url('../fonts/Futura-Bold.svg#webfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Futura-Book';
+  src: url('../fonts/Futura-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Futura-Book.woff') format('woff'),
+       url('../fonts/Futura-Book.ttf')  format('truetype'),
+       url('../fonts/Futura-Book.svg#webfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Futura-Light-Italic';
+  src: url('../fonts/Futura-Light-Italic.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Futura-Light-Italic.woff') format('woff'),
+       url('../fonts/Futura-Light-Italic.ttf')  format('truetype'),
+       url('../fonts/Futura-Light-Italic.svg#webfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Futura-Light';
+  src: url('../fonts/Futura-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Futura-Light.woff') format('woff'),
+       url('../fonts/Futura-Light.ttf')  format('truetype'),
+       url('../fonts/Futura-Light.svg#webfont') format('svg');
+}
+
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('../fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Futura-Medium.woff') format('woff'),
+       url('../fonts/Futura-Medium.ttf')  format('truetype'),
+       url('../fonts/Futura-Medium.svg#webfont') format('svg');
+}
+
+@font-face { 
+  font-family: 'Gill Sans MT Italic'; 
+  src: url('../fonts/gill_sans_mt_italic.eot'); 
+  src: url('../fonts/gill_sans_mt_italic.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/gill_sans_mt_italic.svg#Gill Sans MT Italic') format('svg'), 
+       url('../fonts/gill_sans_mt_italic.woff') format('woff'), 
+       url('../fonts/gill_sans_mt_italic.ttf') format('truetype');
+}
