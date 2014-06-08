@@ -285,25 +285,22 @@ a {
 		overflow: hidden;
 	}
 
-	.image ul {
+	.phone-container ul {
 		position: absolute;
 		top: 150px;
 		left: 0;
 		width: 1000px;
 		text-align: left;
+		width: 210px;
 	}
 
-	.image img {
-		width: 100%
-	}
-
-	.image li, .slide-content li {
-		display: inline-block;
-	}
-
-	.image li {
+	.phone-container li {
 		width: 210px;
 		text-align: left;
+	}
+
+	.phone-container img {
+		width: 100%
 	}
 
 	.slide-content {
@@ -313,12 +310,12 @@ a {
 		overflow: hidden;
 	}
 
-	.content-list li:first-of-type {
+	.phone-container li:first-of-type, .content-list li:first-of-type {
 		display: block;
 		left: 0;
 	}
 
-	.content-list li {
+	.phone-container li, .content-list li {
 		position: absolute;
 		left: 100%;
 		width: 100%;

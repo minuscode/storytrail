@@ -52,6 +52,7 @@ $(document).ready(function(){
     $('.video-container').fadeOut( 600, function() {
       
       $('#video').get(0).pause();
+
       /* If video is from youtube use this code
       $('.video-container iframe').attr('src', '');
       $('.video-container iframe').attr('src', url);
@@ -73,7 +74,7 @@ $(document).ready(function(){
 
   // Slider Carousel
   var width = - $('.slide-content li').width();
-  var timerId = setInterval(function(){
+  function changeSlide() {
     $('.content-list .active').animate({'left': width }, 300, function () {
       $(this).removeClass('active');
 
@@ -85,14 +86,32 @@ $(document).ready(function(){
       $nextelem.css('left', '100%');
     });
 
-  },5000);
+    // Phone section
+    var $size = $('.phone-list li').length - 1;
+    var $elem = $('.phone-list .active').index() == $size ? $('.phone-list li:first-child') : $('.phone-list .active').next();
+    var $nextelem = $elem.index() == $size ? $('.phone-list li:first-child') : $elem.next();
+    
+    $('.phone-list .active').animate({'left': width }, 100, function () {
+      $(this).removeClass('active');
+    });
+    $elem.animate({'left': '0px' }).addClass('active');
+    $nextelem.css('left', '100%');
+
+    $('.slider-nav li').removeClass('active');
+    var $navLink = $('.slider-nav li')[$elem.index()];
+    $($navLink).addClass('active');
+  }
+
+  var slide = setInterval(changeSlide, 5000);
 
   $('.nav-arrow').on( 'click', function(e) {
     var link = $(this);
     e.preventDefault();
+    clearInterval(slide);
 
     if($(this).hasClass('next')) {
-        timerId;
+      changeSlide();
+      slide = setInterval(changeSlide, 5000);
     } else {}
   });
 
