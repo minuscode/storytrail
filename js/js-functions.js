@@ -61,12 +61,21 @@ $(document).ready(function(){
   }); 
 
   // Slide down button
-  $('.slide-down').on( 'click', function(e) {
-    e.preventDefault();
+  $(window).scroll( function() {
+    var height = $(window).height();
 
-    $('html, body').animate({
-        scrollTop: $('.info-container').offset().top - 40
+    var scrollContent = setInterval( function() {
+      if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
+        $('body').animate({
+          scrollTop: height
+        }, 1000);
+      } else if($(window).scrollTop() < height/2) {
+        $('body').animate({
+          scrollTop: 0
+        }, 1000);
+      }
     }, 1000);
+
   });
 
   // Slide up button
@@ -74,6 +83,15 @@ $(document).ready(function(){
     $('html, body').animate({
         scrollTop: 0
     }, 1000);
+  });
+
+  // Auto scroll 
+  $(".js-navigation a").click(function() {
+    var id = $(this).data("scroll");
+
+    $("html, body").animate({
+        scrollTop: $("#" + id).offset().top - 75
+    }, 2000);
   });
 
   // Slider Carousel
