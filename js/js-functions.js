@@ -61,21 +61,12 @@ $(document).ready(function(){
   }); 
 
   // Slide down button
-  $(window).scroll( function() {
-    var height = $(window).height();
+  $('.slide-down').on( 'click', function(e) {
+    e.preventDefault();
 
-    var scrollContent = setInterval( function() {
-      if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
-        $('body').animate({
-          scrollTop: height
-        }, 1000);
-      } else if($(window).scrollTop() < height/2) {
-        $('body').animate({
-          scrollTop: 0
-        }, 1000);
-      }
+    $('html, body').animate({
+        scrollTop: $('.info-container').offset().top - 40
     }, 1000);
-
   });
 
   // Slide up button
@@ -86,13 +77,23 @@ $(document).ready(function(){
   });
 
   // Auto scroll 
-  $(".js-navigation a").click(function() {
-    var id = $(this).data("scroll");
+  var height = $(window).height();
 
-    $("html, body").animate({
-        scrollTop: $("#" + id).offset().top - 75
-    }, 2000);
+  $(window).scroll(function() {
+    clearTimeout( $.data( this, 'scrollCheck' ) );
+    $.data( this, 'scrollCheck', setTimeout(function() {
+      if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
+        $('body').animate({
+          scrollTop: height
+        }, 1000);
+      } else if($(window).scrollTop() < height/2) {
+        $('body').animate({
+          scrollTop: 0
+        }, 500);
+      }
+    }, 500) );
   });
+
 
   // Slider Carousel
   var width = - $('.slide-content li').width();
