@@ -315,6 +315,10 @@ a {
 		left: 0;
 	}
 
+	.phone-container li:last-of-type, .content-list li:last-of-type {
+		left: -100%;
+	}
+
 	.phone-container li, .content-list li {
 		position: absolute;
 		left: 100%;
