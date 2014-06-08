@@ -205,7 +205,8 @@ a {
 	position: relative;
 	border-top: 1px solid #bbbdc0;
 	padding: 40px 0;
-	width: 60%;
+	width: 100%;
+	max-width: 800px;
 	margin: 0 auto;
 	text-align: center;
 	color: #6d6e70
