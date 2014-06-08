@@ -60,7 +60,6 @@ $(document).ready(function(){
     });
   }); 
 
-
   // Slide down button
   $('.slide-down').on( 'click', function(e) {
     e.preventDefault();
@@ -68,9 +67,14 @@ $(document).ready(function(){
     $('html, body').animate({
         scrollTop: $('.info-container').offset().top - 40
     }, 1000);
-
   });
 
+  // Slide up button
+  $('.ST-small-logo').on( 'click', function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+  });
 
   // Slider Carousel
   var width = - $('.slide-content li').width();

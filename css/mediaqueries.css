@@ -9,9 +9,7 @@
 /*--------------------------------------------------------------
 1.0 - Retina Media Queries
 --------------------------------------------------------------*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-	.intro-logo, 
-	.video-link, 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {  
 	.supLx, 
 	.indCriativas, 
 	.slide-down, 
@@ -43,34 +41,27 @@
 
 /* Landscape */
 @media screen and (min-width: 321px) and (max-width: 480px) {
+	/* Landing */
+	.home-intro {
+		height: 100%;
+		width: 70%;
+		padding-top: 0;
+	}
+
+	.intro-text {
+    margin-top: 0;
+    margin-bottom: 0;
+	}
 }
 
 @media (max-width: 480px) {
 	/* Landing */
-	.presentation {
-		height: 300px;
-    width: 70%;
-	}
-
-	.intro-logo {
-		width: 145px;
-		height: 150px;
-		background-size: 686px;
-		background-position: -140px 0px;
-	}
-
 	.intro-text {
     font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
 	}
 
-	.video-link {
-		background-size: 686px;
-		background-position: -132px -145px;
-		width: 50px;
-		padding-top: 60px;
+	.video-link img {
+		margin-top: -10px;
 	}
 
 	.video-link span {
