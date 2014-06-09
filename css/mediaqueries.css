@@ -56,6 +56,8 @@
 	.video-link img {
 		width: auto;
 		height: 100%;
+		max-width: 200px;
+		max-height: 200px;
 	}
 
 	.video-link span {
@@ -276,7 +278,7 @@
 }
 
 /* Landscape */
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 668px) {
 	/* Landing */
 	.home-intro {
 		height: 100%;
