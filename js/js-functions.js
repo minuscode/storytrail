@@ -77,23 +77,27 @@ $(document).ready(function(){
   });
 
   // Auto scroll 
-  var height = $(window).height();
+  function autoScroll() {
+    var height = $(window).height();
+    $(window).scroll(function() {
+      clearTimeout( $.data( this, 'scrollCheck' ) );
+      $.data( this, 'scrollCheck', setTimeout(function() {
+        if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
+          $('body').animate({
+            scrollTop: height
+          }, 1000);
+        } else if($(window).scrollTop() < height/2) {
+          $('body').animate({
+            scrollTop: 0
+          }, 500);
+        }
+      }, 500) );
 
-  $(window).scroll(function() {
-    clearTimeout( $.data( this, 'scrollCheck' ) );
-    $.data( this, 'scrollCheck', setTimeout(function() {
-      if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
-        $('body').animate({
-          scrollTop: height
-        }, 1000);
-      } else if($(window).scrollTop() < height/2) {
-        $('body').animate({
-          scrollTop: 0
-        }, 500);
+      if($(window).scrollTop() >= height) {
+        var slide = setInterval(changeSlide, 5000);
       }
-    }, 500) );
-  });
-
+    });
+  }
 
   // Slider Carousel
   var width = - $('.slide-content li').width();
@@ -125,8 +129,6 @@ $(document).ready(function(){
     var $navLink = $('.slider-nav li')[$elem.index()];
     $($navLink).addClass('active');
   }
-
-  var slide = setInterval(changeSlide, 5000);
 
   $('.nav-arrow').on( 'click', function(e) {
     var link = $(this);
@@ -167,48 +169,31 @@ $(document).ready(function(){
     }
   });
 
-  /*$('.nav-arrow').on( 'click', function(e) {
-    e.preventDefault();
+  // Javascript Media queries
 
-    var $link = $(this), 
-        $slideContent = $('.slide-content  .js-slide'),
-        $slidePhone = $('.image .js-slide');
+  enquire.register("screen and (min-width:481px)", {
 
-    $('.slider-nav li').removeClass('active');
-    if ($(this).hasClass('next')) {
-      // i-Phone slider
-      if ($slidePhone.css('left') == '0px') {
-        $slidePhone.animate({ left: '-214px' });
-        $slideContent.animate({ left: '-399px' }, function() {
-          $('.slider-nav li:nth-of-type(2)').addClass('active');
-        });
-        $('.prev').show();
-      } else if ($slidePhone.css('left') == '-214px') {
-        $slidePhone.animate({ left: '-427px' });
-        $slideContent.animate({ left: '-798px' }, function() {
-          $('.slider-nav li:nth-of-type(3)').addClass('active');
-        });
-        $('.next').hide();
-      }
+    deferSetup : true,
+    setup : function() {
+      // load content via AJAX
+    },
+    match : function() {
+      var slide = setInterval(changeSlide, 5000);
+    },
+    unmatch : function() {
+      autoScroll();
+    }  
+  });
 
-    } else {
-      // i-Phone slider
-      if ($slidePhone.css('left') == '-427px') {
-        $slidePhone.animate({ left: '-210px' });
-        $slideContent.animate({ left: '-399px' }, function() {
-          $('.slider-nav li:nth-of-type(2)').addClass('active');
-        });
-        $('.next').show();
-      } else if ($slidePhone.css('left') == '-210px') {
-        $slidePhone.animate({ left: '0px' });
-        $slideContent.animate({ left: '0px' }, function() {
-          $('.slider-nav li:nth-of-type(1)').addClass('active');
-        });
-        $('.prev').hide();
-      }
+  enquire.register("screen and (max-width:480px)", {
 
-    }
-    
-  });*/
+    deferSetup : true,
+    setup : function() {
+      // load content via AJAX
+    },
+    match : function() {
+      var slide = setInterval(changeSlide, 5000);
+    } 
+  });
 
 });
