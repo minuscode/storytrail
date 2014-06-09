@@ -35,6 +35,7 @@
 	/* Landing */
 	.intro-logo {
 		height: 35%;
+		width: auto;
 		text-align: center;
 	}
 
@@ -44,7 +45,6 @@
 	}
 
 	.intro-text {
-    font-size: 16px;
 		margin: 6% auto;
 	}
 
@@ -117,6 +117,11 @@
 
 @media screen and (max-width: 480px) {
 	/* Landing */
+	.intro-text {
+    font-size: 16px;
+		margin: 6% auto;
+	}
+
 	.video-link img {
 		margin-top: -10px;
 	}
@@ -279,6 +284,7 @@
 	}
 
 	.intro-text {
+		font-size: 16px;
     margin: 10px auto;
 	}
 
