@@ -76,30 +76,7 @@ $(document).ready(function(){
     }, 1000);
   });
 
-  // Auto scroll 
-  function autoScroll() {
-    var height = $(window).height();
-    $(window).scroll(function() {
-      clearTimeout( $.data( this, 'scrollCheck' ) );
-      $.data( this, 'scrollCheck', setTimeout(function() {
-        if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
-          $('body').animate({
-            scrollTop: height
-          }, 1000);
-        } else if($(window).scrollTop() < height/2) {
-          $('body').animate({
-            scrollTop: 0
-          }, 500);
-        }
-      }, 500) );
-
-      if($(window).scrollTop() >= height) {
-        var slide = setInterval(changeSlide, 5000);
-      }
-    });
-  }
-
-  // Slider Carousel
+  // Auto Slider Carousel
   var width = - $('.slide-content li').width();
   var phoneWidth = - $('.phone-container li').width();
   function changeSlide() {
@@ -130,6 +107,37 @@ $(document).ready(function(){
     $($navLink).addClass('active');
   }
 
+  // Auto scroll 
+  var slide;
+
+  function autoScroll() {
+    var height = $(window).height();
+    var isSliderRunning = false;
+
+    $(window).scroll(function() {
+      clearTimeout( $.data( this, 'scrollCheck' ) );
+      $.data( this, 'scrollCheck', setTimeout(function() {
+        if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
+          $('body').animate({
+            scrollTop: height
+          }, 1000);
+        } else if($(window).scrollTop() < height/2) {
+          $('body').animate({
+            scrollTop: 0
+          }, 500);
+        }
+      }, 500) );
+
+      if($(window).scrollTop() >= height) {
+        if(!isSliderRunning) {
+          slide = setInterval(changeSlide, 5000);
+          isSliderRunning = true;
+        }
+      }
+    });
+  }
+
+  // Change slides
   $('.nav-arrow').on( 'click', function(e) {
     var link = $(this);
     e.preventDefault();
@@ -169,8 +177,8 @@ $(document).ready(function(){
     }
   });
 
-  // Javascript Media queries
 
+  // Javascript Media queries
   enquire.register("screen and (min-width:481px)", {
 
     deferSetup : true,
@@ -178,7 +186,6 @@ $(document).ready(function(){
       // load content via AJAX
     },
     match : function() {
-      var slide = setInterval(changeSlide, 5000);
       autoScroll();
     },
     unmatch : function() {
@@ -192,7 +199,7 @@ $(document).ready(function(){
       // load content via AJAX
     },
     match : function() {
-      var slide = setInterval(changeSlide, 5000);
+      slide = setInterval(changeSlide, 5000);
     } 
   });
 

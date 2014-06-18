@@ -248,9 +248,10 @@ a {
 	.nav-arrow {
 		background: url(../images/sprite.png) no-repeat;
 		position: absolute;
-		top: 210px;
+		top: 40%;
 		width: 90px;
 		height: 90px;
+		z-index: 9;
 	}
 
 	.prev {

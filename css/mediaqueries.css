@@ -20,11 +20,15 @@
 	.second-slide-icon, 
 	.third-slide-icon, 
 	.partners-logos li, 
-	.social-logos li span {
+	.social-logos li a {
 		/* Reference the @2x Sprite */
 		background-image: url(../images/sprite@2x.png);
 		/* Translate the @2x sprite's dimensions back to 1x */
 		background-size: 980px 480px; 
+	}
+
+	.info-subcontainer:before {
+		background-position: -667px -9px;
 	}
 }
 
@@ -46,6 +50,11 @@
 
 	.intro-text {
 		margin: 6% auto;
+	}
+
+	.video-container {
+		width: 90%;
+		height: auto;
 	}
 
 	.video-link {
@@ -82,10 +91,6 @@
 	/* Slider */
 	.info-slider {
     width: 100%;
-	}
-
-	.nav-arrow {
-		display: none;
 	}
 
 	/* Social logos */
@@ -141,6 +146,10 @@
 	/* Slider */
 	.info-slider {
     height: 295px;
+	}
+
+	.nav-arrow {
+		display: none;
 	}
 
 	.phone {
@@ -289,12 +298,7 @@
 		font-size: 16px;
     margin: 10px auto;
 	}
-
-	.phone-container {
-		width: 150px;
-		left: 19px;
-	}
-
+	
 	.phone {
 		background-position: -480px -40px;
 	}
@@ -324,6 +328,10 @@
 
 	.slide-content, .image {
 		width: 50%;
+	}
+
+	.image {
+		left: 6%;
 	}
 
 	.phone {
