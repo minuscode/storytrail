@@ -179,9 +179,9 @@ $(document).ready(function(){
     },
     match : function() {
       var slide = setInterval(changeSlide, 5000);
+      autoScroll();
     },
     unmatch : function() {
-      autoScroll();
     }  
   });
 
