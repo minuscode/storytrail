@@ -65,12 +65,8 @@
 	.video-link img {
 		width: auto;
 		height: 100%;
-		max-width: 200px;
-		max-height: 200px;
-	}
-
-	.video-link span {
-		display: none;
+		max-width: 150px;
+		max-height: 150px;
 	}
 
 	.slide-down {
@@ -85,7 +81,7 @@
 	}
 
 	.landing-logos, .applestore-link {
-		display: none;
+		margin-top: -30px;
 	}
 
 	/* Slider */
@@ -131,6 +127,14 @@
 
 	.video-link img {
 		margin-top: -10px;
+	}
+
+	.video-link span {
+		display: none;
+	}
+
+	.landing-logos, .applestore-link {
+		display: none;
 	}
 
 	/* Content dividers */
@@ -298,7 +302,7 @@
 		font-size: 16px;
     margin: 10px auto;
 	}
-	
+
 	.phone {
 		background-position: -480px -40px;
 	}

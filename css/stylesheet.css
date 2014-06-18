@@ -387,6 +387,10 @@ a {
 
 	.slider-nav li {
 		display: inline-block;
+	}
+
+	.slider-nav a {
+		display: block;
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;

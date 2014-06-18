@@ -102,9 +102,9 @@ $(document).ready(function(){
     $elem.animate({'left': '0px' }).addClass('active');
     $nextelem.css('left', '100%');
 
-    $('.slider-nav li').removeClass('active');
+    $('.slider-nav a').removeClass('active');
     var $navLink = $('.slider-nav li')[$elem.index()];
-    $($navLink).addClass('active');
+    $('a', $navLink).addClass('active');
   }
 
   // Auto scroll 
@@ -169,13 +169,68 @@ $(document).ready(function(){
       $elem.animate({'left': '0px' }).addClass('active');
       $nextelem.css('left', '-100%');
 
-      $('.slider-nav li').removeClass('active');
+      $('.slider-nav a').removeClass('active');
       var $navLink = $('.slider-nav li')[$elem.index()];
-      $($navLink).addClass('active');
+      $('a', $navLink).addClass('active');
 
       slide = setInterval(changeSlide, 5000);
     }
   });
+
+  $('.slider-nav a').on('click', function(e) {
+    e.preventDefault();
+    clearInterval(slide);
+    var linkIndex = $(this).parent().index();
+    var slideIndex = $('.content-list .active').index();
+
+    if(linkIndex > slideIndex) {
+      if (linkIndex == 2) {
+        $('.content-list .active').animate({'left': width }, 200, function () {
+          $(this).removeClass('active');
+          $(this).next().animate({'left': 0 }, 200, function () {
+            $(this).prev().css('left', '100%');
+          });
+          $(this).next().animate({'left': width }, 200, function () {
+            $(this).prev().css('left', 0);
+          });
+        });
+      } else {
+        changeSlide();
+        slide = setInterval(changeSlide, 5000);
+      }
+
+    } else if(linkIndex < slideIndex) {
+
+      $('.content-list .active').animate({'left': -width }, 200, function () {
+        $(this).removeClass('active');
+
+        var $size = $('.content-list li').length - 1;
+
+        var $elem = $('.content-list li')[linkIndex];
+        $elem.addClass('active').animate({'left': '0px' });
+        var $nextelem = $elem.index() == 0 ? $('.content-list li:last-of-type') : $elem.prev();
+        $nextelem.css('left', '-100%');
+      });
+
+      // Phone section
+      var $size = $('.phone-list li').length - 1;
+      var $elem = $('.phone-list li')[linkIndex];
+      var $nextelem = $elem.index() == 0 ? $('.phone-list li:last-of-type') : $elem.prev();
+      
+      $('.phone-list .active').animate({'left': -phoneWidth }, 200, function () {
+        $(this).removeClass('active');
+      });
+      $elem.animate({'left': '0px' }).addClass('active');
+      $nextelem.css('left', '-100%');
+
+      $('.slider-nav a').removeClass('active');
+      var $navLink = $('.slider-nav li')[$elem.index()];
+      $('a', $navLink).addClass('active');
+
+      slide = setInterval(changeSlide, 5000);
+    }
+
+  })
 
 
   // Javascript Media queries
