@@ -97,6 +97,7 @@ a {
 	margin: 30px auto;
 	text-shadow: 0 0 20px #000;
 	text-align: center;
+	letter-spacing: 0.3px;
 }
 
 .video-link {
@@ -109,6 +110,7 @@ a {
 	text-transform: uppercase;
 	text-shadow: 0 0 20px #000;
 	font-family: 'Futura-Medium';
+	opacity: 0.8;
 }
 
 .video-link img {
