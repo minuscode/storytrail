@@ -37,8 +37,12 @@
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
 	/* Landing */
+	.home-intro {
+		top: 20%;
+	}
+
 	.intro-logo {
-		height: 35%;
+		height: 30%;
 		width: auto;
 		text-align: center;
 	}
@@ -58,15 +62,15 @@
 	}
 
 	.video-link {
-		height: 25%;
+		height: 20%;
 		width: auto;
 	}
 
 	.video-link img {
 		width: auto;
 		height: 100%;
-		max-width: 150px;
-		max-height: 150px;
+		max-width: 100px;
+		max-height: 100px;
 	}
 
 	.slide-down {
@@ -127,6 +131,8 @@
 
 	.video-link img {
 		margin-top: -10px;
+		max-width: 100px;
+		max-height: 100px;
 	}
 
 	.video-link span {
@@ -286,7 +292,11 @@
 @media screen and (max-width: 320px) {
 	/* Landing */
 	.home-intro {
-		padding-top: 26%;
+		top: 15%;
+	}
+
+	.intro-text {
+		margin: 6% auto;
 	}
 }
 
@@ -296,11 +306,6 @@
 	.home-intro {
 		height: 100%;
 		width: 70%;
-	}
-
-	.intro-text {
-		font-size: 16px;
-    margin: 10px auto;
 	}
 
 	.phone {

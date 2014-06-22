@@ -180,8 +180,8 @@ $(document).ready(function(){
     var slideIndex = $('.content-list .active').index();
 
     if(linkIndex > slideIndex) {
-      if (linkIndex == 2) {
-        $('.content-list .active').animate({'left': width }, 200, function () {
+      if ((linkIndex-slideIndex) == 2) {
+        $('.content-list .active, .phone-list .active').animate({'left': width }, 200, function () {
           $(this).removeClass('active');
           $(this).next().animate({'left': 0 }, 200, function () {
             $(this).prev().css('left', '100%');
@@ -189,6 +189,7 @@ $(document).ready(function(){
           $(this).next().animate({'left': width }, 200, function () {
             $(this).prev().css('left', 0);
           });
+
         });
       } else {
         slideForward();
@@ -196,8 +197,12 @@ $(document).ready(function(){
       }
 
     } else if (linkIndex < slideIndex) {
-      slideBack()
-      slide = setInterval(slideForward, 5000);
+      if ((slideIndex-linkIndex) == 2) {
+
+      } else {
+        slideBack()
+        slide = setInterval(slideForward, 5000);
+      }
     }
 
   })
