@@ -70,10 +70,10 @@ $(document).ready(function(){
   });
 
   // Auto Slider Carousel
-  var width = - $('.content-list li').width();
-  var phoneWidth = - $('.phone-container li').width();
+  var width = $('.content-list li').width();
+  var phoneWidth = $('.phone-container li').width();
   function slideForward() {
-    $('.content-list .active').animate({'left': width }, 200, function () {
+    $('.content-list .active').animate({'left': -width }, 200, function () {
       $(this).removeClass('active');
 
       var $size = $('.content-list li').length - 1;
@@ -89,7 +89,7 @@ $(document).ready(function(){
     var $elem = $('.phone-list .active').index() == $size ? $('.phone-list li:first-child') : $('.phone-list .active').next();
     var $nextelem = $elem.index() == $size ? $('.phone-list li:first-child') : $elem.next();
     
-    $('.phone-list .active').animate({'left': phoneWidth }, 200, function () {
+    $('.phone-list .active').animate({'left': -phoneWidth }, 200, function () {
       $(this).removeClass('active');
       $elem.animate({'left': '0px' }, 200).addClass('active');
     });
@@ -101,7 +101,7 @@ $(document).ready(function(){
   }
 
   function slideBack() {
-    $('.content-list .active').animate({'left': -width }, 200, function () {
+    $('.content-list .active').animate({'left': width }, 200, function () {
       $(this).removeClass('active');
 
       var $size = $('.content-list li').length - 1;
@@ -117,7 +117,7 @@ $(document).ready(function(){
     var $elem = $('.phone-list .active').index() == 0 ? $('.phone-list li:last-of-type') : $('.phone-list .active').prev();
     var $nextelem = $elem.index() == 0 ? $('.phone-list li:last-of-type') : $elem.prev();
     
-    $('.phone-list .active').animate({'left': -phoneWidth }, 200, function () {
+    $('.phone-list .active').animate({'left': phoneWidth }, 200, function () {
       $(this).removeClass('active');
       $elem.animate({'left': '0px' }, 200).addClass('active');
     });
@@ -181,16 +181,18 @@ $(document).ready(function(){
 
     if(linkIndex > slideIndex) {
       if ((linkIndex-slideIndex) == 2) {
-        $('.content-list .active, .phone-list .active').animate({'left': width }, 200, function () {
+        $('.content-list .active, .phone-list .active').animate({'left': -width }, 200, function () {
           $(this).removeClass('active');
-          $(this).next().animate({'left': 0 }, 200, function () {
-            $(this).prev().css('left', '100%');
-          });
-          $(this).next().animate({'left': width }, 200, function () {
-            $(this).prev().css('left', 0);
+          $('.content-list li:last-of-type, .phone-list li:last-of-type').css('left', width);
+          $(this).next().animate({'left': -width }, 200, function () {
+            $(this).prev().css('left', width);
+            $('.content-list li:last-of-type, .phone-list li:last-of-type').addClass('active').animate({'left': 0 });
           });
 
+          $('.slider-nav a').removeClass('active');
+          $('.slider-nav li:last-of-type a').addClass('active');
         });
+        slide = setInterval(slideForward, 5000);
       } else {
         slideForward();
         slide = setInterval(slideForward, 5000);
@@ -198,7 +200,18 @@ $(document).ready(function(){
 
     } else if (linkIndex < slideIndex) {
       if ((slideIndex-linkIndex) == 2) {
+        $('.content-list .active, .phone-list .active').animate({'left': width }, 200, function () {
+          $(this).removeClass('active');
+          $('.content-list li:first-of-type, .phone-list li:first-of-type').css('left', -width);
+          $(this).prev().animate({'left': width }, 200, function () {
+            $(this).next().css('left', width);
+            $('.content-list li:first-of-type, .phone-list li:first-of-type').addClass('active').animate({'left': 0 });
+          });
 
+          $('.slider-nav a').removeClass('active');
+          $('.slider-nav li:first-of-type a').addClass('active');
+        });
+        slide = setInterval(slideForward, 5000);
       } else {
         slideBack()
         slide = setInterval(slideForward, 5000);
