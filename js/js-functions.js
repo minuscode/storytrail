@@ -69,13 +69,6 @@ $(document).ready(function(){
     }, 1000);
   });
 
-  // Slide up button
-  $('.ST-small-logo').on( 'click', function() {
-    $('html, body').animate({
-        scrollTop: 0
-    }, 1000);
-  });
-
   // Auto Slider Carousel
   var width = - $('.content-list li').width();
   var phoneWidth = - $('.phone-container li').width();
@@ -202,7 +195,7 @@ $(document).ready(function(){
         slide = setInterval(slideForward, 5000);
       }
 
-    } else if(linkIndex < slideIndex) {
+    } else if (linkIndex < slideIndex) {
       slideBack()
       slide = setInterval(slideForward, 5000);
     }

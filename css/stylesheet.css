@@ -232,19 +232,11 @@ a {
 }
 
 	/* 3.4.1 - Slider section */
-	.ST-small-logo {
-		display: block;
-		margin: 40px auto 10px;
-		width: 46px;
-		height: 46px;
-		background: url(../images/sprite.png) no-repeat -476px -310px;
-		cursor: pointer;
-	}
-
 	.info-slider-container {
 		position: relative;
 		max-width: 1000px;
 		margin: 0 auto;
+		padding-top: 50px;
 	}
 
 	.nav-arrow {
@@ -268,7 +260,7 @@ a {
 	.info-slider {
 		position: relative;
 		width: 75%;
-		height: 460px;
+		height: 500px;
 		margin: 0 auto;
 		overflow: hidden;
 	}
@@ -290,13 +282,13 @@ a {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: url(../images/sprite.png) no-repeat -675px -20px;
+		background: url(../images/sprite.png) no-repeat -697px 0px;
 		z-index: 1;
 	}
 
 	.phone-container {
 		height: 100%;
-		width: 210px;
+		width: 215px;
 		position: absolute;
 		top: 0;
 		left: 52px;
@@ -305,11 +297,10 @@ a {
 
 	.phone-container ul {
 		position: absolute;
-		top: 150px;
+		top: 82px;
 		left: 0;
-		width: 1000px;
 		text-align: left;
-		width: 210px;
+		width: 100%;
 	}
 
 	.phone-container li {
