@@ -164,26 +164,25 @@
 
 	.phone {
     left: -9px;
-    background-position: -540px -40px;
-    background-size: 686px;
+    background-position: -400px 15px;
+    background-size: 560px;
   }
 
   .phone-container {
-    width: 110px;
-    left: 0;
+    width: 140px;
+    left: 11px;
 	}
 
   .image ul {
-    top: 80px;
-    left: -41px;
+    top: 62px;
+    left: 8px;
 	}
 
   .image li {
-    width: 148px;
+    width: 122px;
 	}
 
 	.slide-content {
-    width: 175px;
     right: 10px;
     padding: 10px 0;
 	}
@@ -236,6 +235,7 @@
 	.slider-nav li {
     width: 6px;
     height: 6px;
+    margin: 0px 4px;
 	}
 
 	/* Quotes */
@@ -308,16 +308,8 @@
 		width: 70%;
 	}
 
-	.phone {
-		background-position: -480px -40px;
-	}
-
 	.image {
 		left: 30px;
-	}
-
-	.image ul {
-		left: 0;
 	}
 }
 
@@ -335,20 +327,28 @@
 		padding-top: 20px;
 	}
 
-	.slide-content, .image {
-		width: 50%;
+	.slide-content {
+		width: 45%;
+		right: 6%;
 	}
 
 	.image {
-		left: 6%;
+		width: 40%;
+		left: 12%;
 	}
 
 	.phone {
-		background-position: -675px -70px;
+		background-position: -530px 20px;
+		background-size: 750px;
+	}
+
+	.phone-container {
+    width: 164px;
+    left: 43px;
 	}
 
 	.phone-container ul {
-		top: 100px;
+		top: 83px;
 	}
 }
 

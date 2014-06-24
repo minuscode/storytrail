@@ -65,7 +65,7 @@ $(document).ready(function(){
     e.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $('.info-container').offset().top - 40
+        scrollTop: $('.info-container').offset().top
     }, 1000);
   });
 

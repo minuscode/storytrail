@@ -273,7 +273,7 @@ a {
 	}
 
 	.image {
-		width: 40%;
+		width: 50%;
 		left: 0;
 		z-index: 1;
 	}
@@ -313,7 +313,7 @@ a {
 	}
 
 	.slide-content {
-		width: 53%;
+		width: 50%;
 		right: 0;
 		padding: 70px 30px 20px;
 		overflow: hidden;
