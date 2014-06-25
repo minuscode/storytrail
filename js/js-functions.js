@@ -1,5 +1,20 @@
 $(document).ready(function(){
-// Video Modal
+  // Center landing content
+  function centerContent() {
+    var winHeight = $(window).height()/2,
+        homeHeight = $('.home-intro').height()/2,
+        center = winHeight-homeHeight;
+    $('.home-intro').css('top', center);
+  }
+  centerContent()
+
+  var resizeTimer;
+  $(window).on('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(centerContent(), 100);
+  });
+
+  // Video Modal
   var url = $('.video-container iframe').attr('src');
 
   $('.video-link').on( 'click', function(e) {
