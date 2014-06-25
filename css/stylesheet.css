@@ -77,14 +77,14 @@ a {
 	width: 100%;
 	max-width: 400px;
 	position: relative;
-	top: 8%;
+	top: 15%;
 	margin: 0 auto;
 }
 
 .intro-logo {
 	display: block;
 	margin: 0 auto;
-	width: 65%;
+	width: 260px;
 }
 
 .intro-logo img {
