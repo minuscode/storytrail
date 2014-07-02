@@ -24,7 +24,7 @@
 		/* Reference the @2x Sprite */
 		background-image: url(../images/sprite@2x.png);
 		/* Translate the @2x sprite's dimensions back to 1x */
-		background-size: 980px 480px; 
+		background-size: 560px 464px; 
 	}
 
 	.info-subcontainer:before {
@@ -47,7 +47,7 @@
 	}
 
 	.intro-text {
-		margin: 6% auto;
+		margin: 0 auto;
 	}
 
 	.video-container {
@@ -68,8 +68,8 @@
 	}
 
 	.slide-down {
-		background-size: 686px;
-		background-position: -217px -160px;
+		background-size: 464px;
+		background-position: -222px -300px;
 		width: 60px;
 		height: 40px
 	}
@@ -83,6 +83,10 @@
 	}
 
 	/* Slider */
+	.info-slider-container {
+		padding-top: 0px;
+	}
+
 	.info-slider {
     width: 100%;
 	}
@@ -95,24 +99,6 @@
 	.social-logos li:first-of-type  {
     display: block;
     margin: 0px auto;
-	}
-
-	.social-logos li:first-of-type a {
-		background-position: -560px -200px;
-    height: 50px;
-    margin: 0px auto 10px;
-	}
-
-	.social-logos li:nth-of-type(2) a {
-    background-position: -580px -248px;
-	}
-
-	.social-logos li:nth-of-type(3) a {
-    background-position: -586px -317px;
-	}
-
-	.social-logos li:nth-of-type(4) a {
-    background-position: -580px -378px;
 	}
 }
 
@@ -154,9 +140,10 @@
 	}
 
 	.phone {
-    left: -9px;
-    background-position: -400px 15px;
-    background-size: 560px;
+		width: 140px;
+    left: 10px;
+    background-position: 0px 17px;
+    background-size: 327px;
   }
 
   .phone-container {
@@ -182,28 +169,21 @@
 		height: 94%;
 	}
 
-	.first-slide-icon, .second-slide-icon, .third-slide-icon {
-    width: 145px;
-    height: 80px;
-    background-size: 686px;
-	}
-
-	.first-slide-icon {
-		background-position: 16px 0;
-	}
-
-	.second-slide-icon {
-		background-position: 16px -90px;
-	}
-
-	.third-slide-icon {
-		background-position: 16px -180px;
+	.slide-icon {
+		background-position: -282px -268px;
+		width: 80px;
+		height: 80px;
+		margin: 0 auto;
 	}
 
 	.slide-content .title {
 		text-align: center;
     font-size: 16px;
     width: 135px;
+	}
+
+	.slide-content p {
+		margin-top: 10px;
 	}
 
 	.slide-content p:nth-of-type(2) {
@@ -213,8 +193,8 @@
 	}
 
 	.info-slider .applestore-link {
-    background-size: 686px;
-    background-position: -135px -230px;
+    background-size: 464px;
+    background-position: -215px -168px;
     margin-top: 0;
 	}
 
@@ -280,12 +260,15 @@
 }
 
 /* Portrait */
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 480px) and (max-width: 568px) {
 	/* Landing */
+	.intro-text {
+		font-size: 20px;
+	}
 }
 
 /* Landscape */
-@media screen and (min-width: 321px) and (max-width: 668px) {
+@media screen and (min-width: 321px) and (max-width: 568px) {
 	/* Landing */
 	.intro-logo {
 		height: auto;
@@ -321,8 +304,10 @@
 	}
 
 	.phone {
-		background-position: -530px 20px;
-		background-size: 750px;
+		width: 190px;
+		left: 33px;
+		background-position: 0px 23px;
+    background-size: 438px auto;
 	}
 
 	.phone-container {
