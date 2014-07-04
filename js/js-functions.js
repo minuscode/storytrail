@@ -1,19 +1,4 @@
 $(document).ready(function(){
-  // Center landing content
-  function centerContent() {
-    var winHeight = $(window).height()/2,
-        homeHeight = $('.home-intro').height()/2,
-        center = winHeight-homeHeight;
-    $('.home-intro').css('top', center);
-  }
-  centerContent()
-
-  var resizeTimer;
-  $(window).on('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(centerContent(), 100);
-  });
-
   // Video Modal
   var url = $('.video-container iframe').attr('src');
 
@@ -154,11 +139,11 @@ $(document).ready(function(){
       clearTimeout( $.data( this, 'scrollCheck' ) );
       $.data( this, 'scrollCheck', setTimeout(function() {
         if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
-          $('body').animate({
+          $('body, html').animate({
             scrollTop: height
           }, 1000);
         } else if($(window).scrollTop() < height/2) {
-          $('body').animate({
+          $('body, html').animate({
             scrollTop: 0
           }, 500);
         }
@@ -257,7 +242,7 @@ $(document).ready(function(){
       // load content via AJAX
     },
     match : function() {
-      slide = setInterval(slideForward, 5000);
+      slide = setInterval(slideForward, 7000);
     } 
   });
 

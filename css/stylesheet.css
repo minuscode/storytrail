@@ -73,10 +73,14 @@ a {
 
 /* 3.1 - Main Content */
 .home-intro {
-	width: 100%;
-	max-width: 400px;
-	position: relative;
-	margin: 0 auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 420px;
+	width: 400px;
 }
 
 .intro-logo {
@@ -187,7 +191,7 @@ a {
 		display: block;
 		margin: 0 auto;
 		width: 100px;
-		height: 90px;
+		height: 80px;
 		background: url(../images/sprite.png) no-repeat -254px -340px;
 		margin: 0 auto;
 	}
@@ -259,7 +263,7 @@ a {
 		position: relative;
 		width: 75%;
 		height: 500px;
-		margin: 0 auto;
+		margin: 0 auto 70px;
 		overflow: hidden;
 	}
 
@@ -319,7 +323,7 @@ a {
 	}
 
 	.slide-content ul {
-		height: 99%
+		height: 80%
 	}
 
 	.phone-container li:first-of-type, .content-list li:first-of-type {
@@ -358,7 +362,7 @@ a {
 	.slide-content p:nth-of-type(2) {
 		color: #808284;
 		margin-top: 20px;
-		padding: 0 50px;
+		padding: 0 90px;
 		font-size: 15px;
 	}
 
@@ -385,7 +389,7 @@ a {
 		background-color: #333
 	}
 
-	/* 3.4.2 - Quotes section */
+	/* 3.4.2 - Quotes section 
 	.quote {
 		margin: 30px auto;
 	}
@@ -396,8 +400,8 @@ a {
 		display: block;
 		color: #58585b;
 	}
-
-	/* 3.4.3 - Be a story teller and subscribe section */
+*/
+	/* 3.4.3 - Be a story teller and subscribe section 
 	.info-subcontainer .upper {
 		text-transform: uppercase;
 		font-size: 17px;
@@ -412,7 +416,7 @@ a {
 		font-size: 15px;
 	}
 
-	.info-subcontainer .textMT {  /* text with margin top */
+	.info-subcontainer .textMT {  // text with margin top 
 		margin-top: 20px;
 		margin-bottom: 0;
 	}
@@ -426,8 +430,8 @@ a {
 		height: 95px;
 		background: url(../images/sprite.png) no-repeat -428px -178px;
 	}
-
-	/* 3.4.4 - Partners and social logos section */
+*/
+	/* 3.4.4 - Partners and social logos section 
 	.partners-logos {
 		padding-top: 15px;
 	}
@@ -451,7 +455,7 @@ a {
 	.partners-logos li:nth-of-type(3) {
 		background-position: -388px -376px;
 	}
-
+*/
 	.social-logos li {
 		display: inline-block;
 		margin: 0;

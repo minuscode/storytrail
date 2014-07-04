@@ -92,6 +92,7 @@
 	}
 
 	/* Social logos */
+
 	.social-logos li {
     width: 25%;
 	}
@@ -99,6 +100,33 @@
 	.social-logos li:first-of-type  {
     display: block;
     margin: 0px auto;
+	}
+
+	.social-logos li a {
+		width: 80px;
+		min-width: inherit;
+	}
+
+	.social-logos  li:first-of-type a, .social-logos  li:nth-of-type(2) a, .social-logos  li:nth-of-type(3) a, .social-logos  li:nth-of-type(4) a {
+		background: url(../images/sprite.png) no-repeat;
+	}
+
+	.social-logos  li:first-of-type a {
+		background-position: -435px 20px;
+		margin-top: 16px;
+		width: 130px;
+	}
+
+	.social-logos  li:nth-of-type(2) a {
+		background-position: -459px -56px;
+	}
+
+	.social-logos  li:nth-of-type(3) a {
+		background-position: -459px -124px;
+	}
+
+	.social-logos  li:nth-of-type(4) a {
+		background-position: -459px -185px;
 	}
 }
 
@@ -337,7 +365,8 @@
 		font-size: 34px;
 	}
 
-	.info-subcontainer, .quotes-subcontainer {
+	/* Slider section */
+	.info-subcontainer, .info-slider-container {
 		width: 80%;
 		max-width: none;
 		padding: 80px 0;
@@ -345,5 +374,75 @@
 
 	.info-slider {
     margin: 150px auto;
+    height: 700px;
+    width: 100%;
+	}
+
+	.image {
+		width: 23%;
+		left: 12%
+	}
+
+	.phone {
+		width: 100%;
+		background: url(../images/phone1.png) no-repeat;
+		background-size: 100%;
+	}
+
+	.phone-container {
+    width: 89%;
+    top: 4.5%;
+    left: 57px;
+	}
+
+	.slide-icon {
+    background: url(../images/WEB_info_BTN_logo.png) no-repeat;
+    background-size: 100%;
+	}
+
+	.slide-content .title {
+    font-size: 36px;
+    width: 40%;
+	}
+
+	.slide-content p:nth-of-type(2) {
+    font-size: 28px;
+	}
+
+	/* Social logos section */
+	.social-logos li {
+		display: inline-block;
+		margin: 0;
+		width: 14%;
+		margin: 0 3%;
+		vertical-align: top;
+	}
+
+	.social-logos li a {
+		height: 160px;
+		width: 100%;
+		min-width: 100px;
+		margin: 0 auto;
+	}
+
+	.social-logos  li:first-of-type a {
+		background: url(../images/WEB_info_BTN_logos_facebook.png) no-repeat;
+		background-size: 100%;
+		width: auto;
+	}
+
+	.social-logos  li:nth-of-type(2) a {
+		background: url(../images/WEB_info_BTN_logos_excitingspace.png) no-repeat;
+		background-size: 100%;
+	}
+
+	.social-logos  li:nth-of-type(3) a {
+		background: url(../images/WEB_info_BTN_logos_industriascriativas.png) no-repeat;
+		background-size: 100%;
+	}
+
+	.social-logos  li:nth-of-type(4) a {
+		background: url(../images/WEB_info_BTN_logos_startuplisboa.png) no-repeat;
+		background-size: 100%;
 	}
 }
