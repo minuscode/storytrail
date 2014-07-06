@@ -130,7 +130,7 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 .video-container {
 	width: 80%;
 	max-width: 1080px;
-	height: 610px;
+	max-height: 610px;
 	position: fixed;
 	display: none;
 	z-index: 999;
