@@ -44,6 +44,10 @@ a {
 	color: #93111D;
 }
 
+div.ui-page.ui-page-theme-a.ui-page-active {
+	min-height: 100%;
+}
+
 /*--------------------------------------------------------------
 2.0 - Helpers
 --------------------------------------------------------------*/
@@ -87,6 +91,7 @@ a {
 	display: block;
 	margin: 0 auto;
 	width: 260px;
+	text-align: center;
 }
 
 .intro-logo img {
@@ -124,6 +129,7 @@ a {
 /* 3.2 - Video */
 .video-container {
 	width: 80%;
+	max-width: 1080px;
 	height: 610px;
 	position: fixed;
 	display: none;
@@ -362,7 +368,7 @@ a {
 	.slide-content p:nth-of-type(2) {
 		color: #808284;
 		margin-top: 20px;
-		padding: 0 90px;
+		padding: 0 25%;
 		font-size: 15px;
 	}
 
@@ -370,7 +376,14 @@ a {
 		position: relative;
 		display: block;
 		right: 0;
-		margin: 12px auto 0;
+		margin: 20px auto 10px;
+		top: 0;
+	}
+
+	.content-list .upper {
+		text-transform: uppercase;
+		font-size: 10px;
+		font-family: 'Futura-Medium';
 	}
 
 	.slider-nav li {

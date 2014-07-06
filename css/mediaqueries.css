@@ -37,34 +37,9 @@
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
 	/* Landing */
-	.intro-logo {
-		text-align: center;
-	}
-
-	.intro-logo img {
-		width: 200px;
-		height: auto;
-	}
-
-	.intro-text {
-		margin: 0 auto;
-	}
-
 	.video-container {
 		width: 90%;
 		height: auto;
-	}
-
-	.video-link {
-		height: 20%;
-		width: auto;
-	}
-
-	.video-link img {
-		width: auto;
-		height: 100%;
-		max-width: 80px;
-		max-height: 80px;
 	}
 
 	.slide-down {
@@ -92,7 +67,6 @@
 	}
 
 	/* Social logos */
-
 	.social-logos li {
     width: 25%;
 	}
@@ -122,7 +96,7 @@
 	}
 
 	.social-logos  li:nth-of-type(3) a {
-		background-position: -459px -124px;
+		background-position: -459px -125px;
 	}
 
 	.social-logos  li:nth-of-type(4) a {
@@ -130,8 +104,44 @@
 	}
 }
 
+@media screen and (max-width: 568px) {
+	/* Landing */
+	.home-intro {
+		height: 320px;
+	}
+
+	.intro-logo img {
+		width: 200px;
+	}
+
+	.intro-text {
+		margin: 0 auto;
+	}
+
+	.video-link {
+		height: 20%;
+		width: auto;
+	}
+
+	.video-link img {
+		width: auto;
+		height: 100%;
+		max-width: 80px;
+		max-height: 80px;
+	}
+
+	/* Slider */
+	.content-list .upper {
+		font-size: 8px;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	/* Landing */
+	.home-intro {
+		width: 300px;
+	}
+
 	.intro-text {
     font-size: 16px;
 		margin: 0% auto;
@@ -161,6 +171,7 @@
 	/* Slider */
 	.info-slider {
     height: 295px;
+    margin: 30px auto;
 	}
 
 	.nav-arrow {
@@ -175,8 +186,8 @@
   }
 
   .phone-container {
-    width: 140px;
-    left: 11px;
+    width: 138px;
+    left: 10px;
 	}
 
   .image ul {
@@ -282,8 +293,17 @@
 	}
 
 	/* Social logos */
-	.social-logos li {
-    width: 100px;
+	.social-logos li, .social-logos li:first-of-type {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.social-logos li:first-of-type a {
+		margin-top: 0;
+	}
+
+	.social-logos li p {
+		margin-bottom: 0px;
 	}
 }
 
@@ -315,6 +335,8 @@
 	/* Slider */
 	.info-slider {
 		height: 410px;
+		margin-top: 105px;
+		margin-bottom: 105px;
 	}
 
 	.slide-content {
@@ -324,6 +346,10 @@
 	.slide-content {
 		width: 45%;
 		right: 6%;
+	}
+
+	.slide-content ul {
+		height: 90%;
 	}
 
 	.image {
@@ -346,15 +372,26 @@
 	.phone-container ul {
 		top: 83px;
 	}
+
+	/* Social Logos */
+	.social-logos li:first-of-type a {
+		margin-top: 0px;
+		margin-bottom: 25px;
+	}
+
+	.info-subcontainer, .quotes-subcontainer {
+		padding: 45px 0;
+	}
 }
 
 /*--------------------------------------------------------------
 3.0 - Large screens
 --------------------------------------------------------------*/
 @media screen and (min-width: 1620px) {
-	/* 3.1 - Main Content */
+	/* Main Content */
 	.home-intro {
-		max-width: 700px;
+		width: 700px;
+		height: 670px;
 	}
 
 	.intro-logo {
@@ -365,25 +402,35 @@
 		font-size: 34px;
 	}
 
+	.video-link img {
+		width: 45%;
+	}
+
+	.video-container {
+		max-width: 1420px;
+		height: 800px;
+	}
+
 	/* Slider section */
 	.info-subcontainer, .info-slider-container {
 		width: 80%;
 		max-width: none;
-		padding: 80px 0;
+		padding: 80px 0 0;
 	}
 
 	.info-slider {
-    margin: 150px auto;
+    margin: 0 auto;
     height: 700px;
     width: 100%;
 	}
 
 	.image {
-		width: 23%;
-		left: 12%
+		width: 20%;
+		left: 20%
 	}
 
 	.phone {
+		left: 0;
 		width: 100%;
 		background: url(../images/phone1.png) no-repeat;
 		background-size: 100%;
@@ -391,13 +438,23 @@
 
 	.phone-container {
     width: 89%;
-    top: 4.5%;
-    left: 57px;
+    top: 4%;
+    left: 15px;
+	}
+
+	.phone-container ul {
+    top: 64px;
 	}
 
 	.slide-icon {
     background: url(../images/WEB_info_BTN_logo.png) no-repeat;
     background-size: 100%;
+    margin-bottom: 40px;
+	}
+
+	.slide-content {
+		right: 5%;
+		padding-top: 40px;
 	}
 
 	.slide-content .title {
@@ -407,15 +464,24 @@
 
 	.slide-content p:nth-of-type(2) {
     font-size: 28px;
+		padding: 0 200px;
 	}
 
 	/* Social logos section */
+	.info-subcontainer {
+		padding: 80px 0;
+	}
+
 	.social-logos li {
 		display: inline-block;
 		margin: 0;
 		width: 14%;
 		margin: 0 3%;
 		vertical-align: top;
+	}
+
+	.sec-text {
+		font-size: 22px;
 	}
 
 	.social-logos li a {

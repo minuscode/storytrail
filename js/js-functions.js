@@ -69,6 +69,40 @@ $(document).ready(function(){
     }, 1000);
   });
 
+  // Auto scroll 
+  var slide;
+
+  function autoScroll() {
+    var height = $(window).height();
+    var isSliderRunning = false;
+
+    $(window).scroll(function() {
+      clearTimeout( $.data( this, 'scrollCheck' ) );
+      $.data( this, 'scrollCheck', setTimeout(function() {
+        if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
+          $('body, html').animate({
+            scrollTop: height
+          }, 500);
+        } else if($(window).scrollTop() < height/2) {
+          $('body, html').animate({
+            scrollTop: 0
+          }, 500);
+        }
+      }, 500) );
+
+      if($(window).scrollTop() >= height) {
+        if(!isSliderRunning) {
+          slide = setInterval(slideForward, 7000);
+          $(window).on('resize', function(){
+            clearInterval(slide);
+            slide = setInterval(slideForward, 7000);
+          });
+          isSliderRunning = true;
+        }
+      }
+    });
+  }
+
   // Auto Slider Carousel
   var width = $('.content-list li').width();
   var phoneWidth = $('.phone-container li').width();
@@ -128,36 +162,6 @@ $(document).ready(function(){
     $('a', $navLink).addClass('active');
   }
 
-  // Auto scroll 
-  var slide;
-
-  function autoScroll() {
-    var height = $(window).height();
-    var isSliderRunning = false;
-
-    $(window).scroll(function() {
-      clearTimeout( $.data( this, 'scrollCheck' ) );
-      $.data( this, 'scrollCheck', setTimeout(function() {
-        if($(window).scrollTop() >= height/2 && $(window).scrollTop() < height ) {
-          $('body, html').animate({
-            scrollTop: height
-          }, 1000);
-        } else if($(window).scrollTop() < height/2) {
-          $('body, html').animate({
-            scrollTop: 0
-          }, 500);
-        }
-      }, 500) );
-
-      if($(window).scrollTop() >= height) {
-        if(!isSliderRunning) {
-          slide = setInterval(slideForward, 5000);
-          isSliderRunning = true;
-        }
-      }
-    });
-  }
-
   // Change slides
   $('.nav-arrow').on( 'click', function(e) {
     var link = $(this);
@@ -166,10 +170,10 @@ $(document).ready(function(){
 
     if($(this).hasClass('next')) {
       slideForward();
-      slide = setInterval(slideForward, 5000);
+      slide = setInterval(slideForward, 7000);
     } else {
       slideBack()
-      slide = setInterval(slideForward, 5000);
+      slide = setInterval(slideForward, 7000);
     }
   });
 
@@ -192,10 +196,10 @@ $(document).ready(function(){
           $('.slider-nav a').removeClass('active');
           $('.slider-nav li:last-of-type a').addClass('active');
         });
-        slide = setInterval(slideForward, 5000);
+        slide = setInterval(slideForward, 7000);
       } else {
         slideForward();
-        slide = setInterval(slideForward, 5000);
+        slide = setInterval(slideForward, 7000);
       }
 
     } else if (linkIndex < slideIndex) {
@@ -211,14 +215,14 @@ $(document).ready(function(){
           $('.slider-nav a').removeClass('active');
           $('.slider-nav li:first-of-type a').addClass('active');
         });
-        slide = setInterval(slideForward, 5000);
+        slide = setInterval(slideForward, 7000);
       } else {
         slideBack()
-        slide = setInterval(slideForward, 5000);
+        slide = setInterval(slideForward, 7000);
       }
     }
 
-  })
+  });
 
 
   // Javascript Media queries
@@ -230,6 +234,9 @@ $(document).ready(function(){
     },
     match : function() {
       autoScroll();
+      $(window).on('resize', function(){
+        autoScroll();
+      });
     },
     unmatch : function() {
     }  
@@ -243,6 +250,19 @@ $(document).ready(function(){
     },
     match : function() {
       slide = setInterval(slideForward, 7000);
+
+      $('.info-slider').swipe({
+        swipe:function(event, direction, distance, duration, fingerCount) {
+          clearInterval(slide);
+          if(direction == 'left') {
+            slideForward();
+            slide = setInterval(slideForward, 7000);
+          } else {
+            slideBack();
+            slide = setInterval(slideForward, 7000);
+          }
+        }
+      });
     } 
   });
 
