@@ -37,6 +37,10 @@
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
 	/* Landing */
+	.main-container {
+		background-attachment: url(../images/home_bg_small.jpg);
+	}
+
 	.video-container {
 		width: 90%;
 		height: auto;
@@ -389,6 +393,10 @@
 --------------------------------------------------------------*/
 @media screen and (min-width: 1620px) {
 	/* Main Content */
+	.main-container {
+		background-attachment: url(../images/home_bg_big.jpg);
+	}
+
 	.home-intro {
 		width: 700px;
 		height: 670px;
