@@ -488,6 +488,10 @@
 		background-size: 745px;
 	}
 
+	.content-list .upper {
+		font-size: 13px;
+	}
+
 	/* Social logos section */
 	.social-logos li {
 		display: inline-block;
