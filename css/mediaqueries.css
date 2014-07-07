@@ -484,7 +484,8 @@
 	.applestore-link {
 		width: 200px;
 		height: 60px;
-		background: url(../images/sprite@2x.png) no-repeat -290px -235px;
+		background: url(../images/sprite@2x.png) no-repeat -352px -272px;
+		background-size: 745px;
 	}
 
 	/* Social logos section */
