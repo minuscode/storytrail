@@ -481,6 +481,12 @@
 		padding: 0 200px;
 	}
 
+	.applestore-link {
+		width: 200px;
+		height: 60px;
+		background: url(../images/sprite@2x.png) no-repeat -290px -235px;
+	}
+
 	/* Social logos section */
 	.social-logos li {
 		display: inline-block;
