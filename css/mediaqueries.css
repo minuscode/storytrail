@@ -447,7 +447,7 @@
 	.phone-container {
     width: 77%;
     top: 16.7%;
-    left: 15px;
+    left: 5%;
 	}
 
 	.phone-container ul {
@@ -495,7 +495,7 @@
 	}
 
 	.social-logos li a {
-		height: 160px;
+		height: 100%;
 		width: 100%;
 		min-width: 100px;
 		margin: 0 auto;
