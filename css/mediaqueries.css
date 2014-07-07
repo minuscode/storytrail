@@ -423,7 +423,7 @@
 	.info-subcontainer, .info-slider-container {
 		width: 80%;
 		max-width: none;
-		padding: 80px 0 0;
+		padding: 80px 0;
 	}
 
 	.info-slider {
@@ -445,8 +445,8 @@
 	}
 
 	.phone-container {
-    width: 89%;
-    top: 4%;
+    width: 77%;
+    top: 16.7%;
     left: 15px;
 	}
 
@@ -456,7 +456,7 @@
 
 	.phone-container img {
 		width: auto;
-		max-height: 460px;
+		max-height: 472px;
 	}
 
 	.slide-icon {
@@ -482,10 +482,6 @@
 	}
 
 	/* Social logos section */
-	.info-subcontainer {
-		padding: 80px 0;
-	}
-
 	.social-logos li {
 		display: inline-block;
 		margin: 0;
@@ -505,24 +501,4 @@
 		margin: 0 auto;
 	}
 
-	.social-logos  li:first-of-type a {
-		background: url(../images/WEB_info_BTN_logos_facebook.png) no-repeat;
-		background-size: 100%;
-		width: auto;
-	}
-
-	.social-logos  li:nth-of-type(2) a {
-		background: url(../images/WEB_info_BTN_logos_excitingspace.png) no-repeat;
-		background-size: 100%;
-	}
-
-	.social-logos  li:nth-of-type(3) a {
-		background: url(../images/WEB_info_BTN_logos_industriascriativas.png) no-repeat;
-		background-size: 100%;
-	}
-
-	.social-logos  li:nth-of-type(4) a {
-		background: url(../images/WEB_info_BTN_logos_startuplisboa.png) no-repeat;
-		background-size: 100%;
-	}
 }
