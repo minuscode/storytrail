@@ -416,7 +416,7 @@
 
 	.video-container {
 		max-width: 1420px;
-		height: 800px;
+		max-height: 800px;
 	}
 
 	/* Slider section */
@@ -434,14 +434,14 @@
 
 	.image {
 		width: 20%;
-		left: 20%
+		left: 25%
 	}
 
 	.phone {
 		left: 0;
 		width: 100%;
 		background: url(../images/phone1.png) no-repeat;
-		background-size: 100%;
+		background-size: auto 100%;
 	}
 
 	.phone-container {
@@ -451,7 +451,12 @@
 	}
 
 	.phone-container ul {
-    top: 64px;
+    top: 0;
+	}
+
+	.phone-container img {
+		width: auto;
+		max-height: 460px;
 	}
 
 	.slide-icon {
@@ -461,7 +466,8 @@
 	}
 
 	.slide-content {
-		right: 5%;
+		width: 40%;
+		right: 15%;
 		padding-top: 40px;
 	}
 
