@@ -92,6 +92,7 @@ $(document).ready(function(){
 
       if($(window).scrollTop() >= height) {
         if(!isSliderRunning) {
+          clearInterval(slide);
           slide = setInterval(slideForward, 7000);
           $(window).on('resize', function(){
             clearInterval(slide);
@@ -104,9 +105,9 @@ $(document).ready(function(){
   }
 
   // Auto Slider Carousel
-  var width = $('.content-list li').width();
-  var phoneWidth = $('.phone-container li').width();
   function slideForward() {
+    var width = $('.content-list li').width();
+    var phoneWidth = $('.phone-container li').width();
     $('.content-list .active').animate({'left': -width }, 200, function () {
       $(this).removeClass('active');
 
@@ -135,6 +136,8 @@ $(document).ready(function(){
   }
 
   function slideBack() {
+    var width = $('.content-list li').width();
+    var phoneWidth = $('.phone-container li').width();
     $('.content-list .active').animate({'left': width }, 200, function () {
       $(this).removeClass('active');
 
@@ -234,7 +237,7 @@ $(document).ready(function(){
     },
     match : function() {
       autoScroll();
-      $(window).on('resize', function(){
+      $(window).on('resize', function() {
         autoScroll();
       });
     },
@@ -250,7 +253,6 @@ $(document).ready(function(){
     },
     match : function() {
       slide = setInterval(slideForward, 7000);
-
       $('.info-slider').swipe({
         swipe:function(event, direction, distance, duration, fingerCount) {
           clearInterval(slide);
