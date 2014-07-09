@@ -288,7 +288,7 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 
 	.phone {
 		position: absolute;
-		left: 40px;
+		left: 100px;
 		width: 240px;
 		height: 100%;
 		background: url(../images/sprite.png) no-repeat 0px 5px;
@@ -300,7 +300,7 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 		width: 210px;
 		position: absolute;
 		top: 0;
-		left: 53px;
+		left: 113px;
 		overflow: hidden;
 	}
 

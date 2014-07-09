@@ -27,7 +27,7 @@
 	}
 
 	.info-subcontainer:before {
-		background-position: -667px -9px;
+		background-position: -300px -424px;
 	}
 }
 
@@ -409,36 +409,37 @@
     width: 100%;
 	}
 
-	.image {
-		width: 25%;
-		left: 25%
-	}
-
 	.phone {
-		left: 0;
-		width: 100%;
-		background: url(../images/phone1.png) no-repeat;
-		background-size: auto 100%;
+		width: 360px;
+		left: auto;
+		right: 150px;
+		background: url(../images/sprite@2x.png) no-repeat;
+		background-size: 840px;
 	}
 
 	.phone-container {
-    width: 62%;
-    top: 16.7%;
-    left: 3.8%;
+		width: 315px;
+		left: auto;
+		right: 176px;
 	}
 
 	.phone-container ul {
-    top: 0;
+    top: 115px;
+	}
+
+	/*.image {
+		width: 25%;
+		left: 25%
 	}
 
 	.phone-container img {
 		width: auto;
 		max-height: 472px;
 	}
-
+*/
 	.slide-icon {
-    background: url(../images/WEB_info_BTN_logo.png) no-repeat;
-    background-size: 100%;
+    background: url(../images/sprite@2x.png) no-repeat -376px -370px;
+    background-size: 745px;
     margin-bottom: 40px;
 	}
 
@@ -450,12 +451,12 @@
 
 	.slide-content .title {
     font-size: 36px;
-    width: 40%;
+    width: 260px;
 	}
 
 	.slide-content p:nth-of-type(2) {
     font-size: 28px;
-		padding: 0 200px;
+		padding: 0 130px;
 	}
 
 	.applestore-link {
@@ -473,9 +474,13 @@
 	.social-logos li {
 		display: inline-block;
 		margin: 0;
-		width: 14%;
+		width: 200px;
 		margin: 0 3%;
 		vertical-align: top;
+	}
+
+	.social-logos li:first-of-type a {
+    width: auto;
 	}
 
 	.sec-text {
