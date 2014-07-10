@@ -470,6 +470,21 @@
 		font-size: 13px;
 	}
 
+	.nav-arrow {
+    background: url(../images/sprite@2x.png) no-repeat;
+    width: 90px;
+    height: 100px;
+    background-size: 745px;
+	}
+
+	.prev {
+    background-position: -510px -376px;
+	}
+
+	.next {
+    background-position: -510px -504px;
+	}
+
 	/* Social logos section */
 	.social-logos li {
 		display: inline-block;
