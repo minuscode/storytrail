@@ -259,7 +259,7 @@ $(document).ready(function(){
           if(direction == 'left') {
             slideForward();
             slide = setInterval(slideForward, 7000);
-          } else {
+          } else if(direction == 'right'){
             slideBack();
             slide = setInterval(slideForward, 7000);
           }
