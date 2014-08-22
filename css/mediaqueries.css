@@ -149,8 +149,39 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 639px) {
-	.info-container {
-		padding-bottom: 52px;
+	/* 3.1 - Main Content */
+	.home-intro {
+		height: 400px;
+		width: 300px;
+	}
+
+	.intro-logo {
+		width: 300px;
+		height: 190px;
+	}
+
+	.intro-text {
+		font-size: 18px;
+	}
+
+	.video-link {
+		width: 120px;
+		height: 120px;
+	}
+
+	/* 3.3 - Bottom Content */
+	.bottom-content {
+		height: 70px;
+	}
+
+	.slide-down {
+		width: 68px;
+		height: 68px;
+	}
+
+	.applestore-link {
+		width: 96px;
+		height: 28px;
 	}
 
 	/* 3.4.1 - Slider section */
@@ -232,8 +263,39 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {	
-	.info-container {
-		padding-bottom: 65px;
+	/* 3.1 - Main Content */
+	.home-intro {
+		height: 490px;
+		width: 380px;
+	}
+
+	.intro-logo {
+		width: 370px;
+		height: 240px;
+	}
+
+	.intro-text {
+		font-size: 20px;
+	}
+
+	.video-link {
+		width: 150px;
+		height: 150px;
+	}
+
+	/* 3.3 - Bottom Content */
+	.bottom-content {
+		height: 85px;
+	}
+
+	.slide-down {
+		width: 83px;
+		height: 83px;
+	}
+
+	.applestore-link {
+		width: 120px;
+		height: 36px;
 	}
 
 	/* 3.4.1 - Slider section */
