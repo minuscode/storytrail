@@ -44,19 +44,11 @@ a {
 	color: #0e76bc;
 }
 
-div.ui-page.ui-page-theme-a.ui-page-active {
-	min-height: 100%;
-}
-
 /*--------------------------------------------------------------
 2.0 - Helpers
 --------------------------------------------------------------*/
 .uppertext {
 	text-transform: uppercase;
-}
-
-.red-text {
-	color: #93111d;
 }
 
 .sec-text {
@@ -69,7 +61,8 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 --------------------------------------------------------------*/
 .main-container {
 	height: 100%;
-	background: url(../images/home_bg_medium.jpg) no-repeat #000;
+	min-height: 620px;
+	background: url(../images/WEB_home_BG.jpg) no-repeat #000;
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -77,20 +70,23 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 
 /* 3.1 - Main Content */
 .home-intro {
-	margin: auto;
+	margin: 0 auto 100px;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	height: 420px;
-	width: 400px;
+	height: 520px;
+	width: 750px;
 }
 
 .intro-logo {
+	background: url(../images/WEB_home_IMG_logo.png) no-repeat;
+	background-size: 100%;
 	display: block;
 	margin: 0 auto;
-	width: 260px;
+	width: 475px;
+	height: 306px;
 	text-align: center;
 }
 
@@ -101,29 +97,21 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 .intro-text {
 	color: #fff;
 	font-size: 23px;
-	margin: 30px auto;
+	margin: 0 auto;
 	text-shadow: 0 0 20px #000;
 	text-align: center;
 	letter-spacing: 0.3px;
 }
 
 .video-link {
+	background: url(../images/play_button.png) no-repeat;
+	background-size: 100%;
 	display: block;
 	margin: 0 auto;
-	width: 50%;
-	color: #fff;
-	font-size: 16px;
-	text-align: center;
-	text-transform: uppercase;
+	width: 190px;
+	height: 190px;
 	text-shadow: 0 0 20px #000;
-	font-family: 'Futura-Medium';
 	opacity: 0.8;
-}
-
-.video-link img {
-	width: 50%;
-	display: block;
-	margin: 0 auto;
 }
 
 /* 3.2 - Video */
@@ -166,11 +154,10 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 80px;
+	height: 110px;
 }
 
-
-	/* 3.3.1 - Landing links */
+	/* 3.3.1 - Landing links 
 	.landing-logos {
 		position: absolute;
 		left: 0;
@@ -192,26 +179,39 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 	.indCriativas {	
 		background-position: -470px -15px;
 	}
+	*/
 
-	.slide-down {
-		display: block;
-		margin: 0 auto;
-		width: 100px;
-		height: 80px;
-		background: url(../images/sprite.png) no-repeat -254px -340px;
-		margin: 0 auto;
-	}
+.slide-down {
+	background: url(../images/slide_down.png) no-repeat;
+	background-size: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 106px;
+	height: 106px;
+	margin: 0 auto;
+}
 
-	.applestore-link {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		width: 136px;
-		height: 40px;
-		background: url(../images/sprite.png) no-repeat -272px -208px;
-	}
+.applestore-link {
+	background: url(../images/home_appstore.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	width: 155px;
+	height: 45px;
+	margin: auto;
+}
 
 /* 3.4 - Info Container */
+.info-container {
+	position: relative;
+	height: 100%;
+	min-height: 700px;
+	margin-top: 80px;
+	margin-bottom: 150px;
+}
+/*
 .info-subcontainer, .quotes-subcontainer {
 	position: relative;
 	border-top: 1px solid #bbbdc0;
@@ -220,7 +220,7 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 	max-width: 800px;
 	margin: 0 auto;
 	text-align: center;
-	color: #6d6e70
+	color: #6d6e70;
 }
 
 .info-subcontainer:before, .divider-icon {
@@ -238,38 +238,57 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 	display: block;
 	top: 0;
 }
-
+*/
 	/* 3.4.1 - Slider section */
 	.info-slider-container {
-		position: relative;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 640px;
 		max-width: 1000px;
-		margin: 0 auto;
-		padding-top: 50px;
+		margin: auto;
+	}
+
+	.top-logo {
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 100%;
+		margin: auto;
+		display: block;
+		width: 97px;
+		height: 89px;
+	}
+
+	.top-logo img {
+		width: 100%;
+	}
+
+	.prev {
+		background: url(../images/arrow_left.png) no-repeat;
+	}
+
+	.next {	
+		background: url(../images/arrow_right.png) no-repeat;
+		right: 0;
 	}
 
 	.nav-arrow {
-		background: url(../images/sprite.png) no-repeat;
 		position: absolute;
+		background-size: 100%;
 		top: 40%;
 		width: 90px;
 		height: 90px;
 		z-index: 9;
 	}
 
-	.prev {
-		background-position: -374px -272px;
-	}
-
-	.next {	
-		background-position: -368px -368px;
-		right: 0;
-	}
-
 	.info-slider {
 		position: relative;
-		width: 75%;
-		height: 500px;
-		margin: 0 auto 70px;
+		width: 760px;
+		height: 100%;
+		margin: auto;
 		overflow: hidden;
 	}
 
@@ -281,56 +300,38 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 	}
 
 	.image {
-		width: 50%;
+		width: 325px;
 		left: 0;
 		z-index: 1;
 	}
 
 	.phone {
+		background: url(../images/iphone.png) no-repeat;
 		position: absolute;
-		left: 100px;
-		width: 240px;
+		width: 100%;
 		height: 100%;
-		background: url(../images/sprite.png) no-repeat 0px 5px;
+		background-size: 100%;
 		z-index: 1;
 	}
 
 	.phone-container {
 		height: 100%;
-		width: 210px;
+		width: 100%;
 		position: absolute;
 		top: 0;
-		left: 113px;
-		overflow: hidden;
 	}
 
 	.phone-container ul {
 		position: absolute;
-		top: 82px;
-		left: 0;
-		text-align: left;
-		width: 100%;
+		top: 108px;
+		left: 26px;
+		width: 273px;
+		height: 410px;
+		overflow: hidden;
 	}
 
 	.phone-container li {
 		width: 210px;
-		text-align: left;
-	}
-
-	.phone-container img {
-		width: 100%
-	}
-
-	.slide-content {
-		width: 50%;
-		right: 0;
-		padding: 70px 30px 20px;
-		overflow: hidden;
-	}
-
-	.slide-content ul {
-		height: 80%;
-		overflow: hidden;
 	}
 
 	.phone-container li:first-of-type, .content-list li:first-of-type {
@@ -349,42 +350,58 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 		text-align: center;
 	}
 
-	.slide-icon {
-		background: url(../images/sprite.png) no-repeat -272px -268px;
-		display: block;
-		width: 100px;
-		height: 100px;
-		margin: 0 auto 10px;
+	.phone-container img {
+		width: 100%
+	}
+
+	.slide-content {
+		overflow: hidden;
+		width: 330px;
+		right: 0;
+		padding: 70px 30px 20px;
+	}
+
+	.slide-content ul {
+		overflow: hidden;
 	}
 
 	.slide-content .title {
 		font-family: 'Futura-Medium';
 		text-transform: uppercase;
-		font-size: 24px;
-		width: 185px;
-		margin: 0 auto;
+		font-size: 36px;
+		width: 300px;
+		margin: 0 auto 50px;
 		color: #231f20;
 	}
 
 	.slide-content p:nth-of-type(2) {
 		color: #808284;
 		margin-top: 20px;
-		padding: 0 25%;
-		font-size: 15px;
+		margin-bottom: 50px;
+		font-size: 30px;
 	}
 
 	.info-slider .applestore-link {
 		position: relative;
-		display: block;
-		right: 0;
-		margin: 20px auto 10px;
 		top: 0;
+		right: 0;
+		display: block;
+		width: 310px;
+		height: 90px;
+		margin: 20px auto 50px;
 	}
 
 	.content-list .upper {
 		text-transform: uppercase;
-		font-size: 10px;
+		font-size: 16px;
 		font-family: 'Futura-Medium';
+	}
+
+	.slider-nav {
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
 
 	.slider-nav li {
@@ -470,29 +487,52 @@ div.ui-page.ui-page-theme-a.ui-page-active {
 		background-position: -388px -376px;
 	}
 */
-	.social-logos li {
+	.logos-container {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		font-size: 16px;
+	}
+
+	.logos {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.logos li {
 		display: inline-block;
 		margin: 0;
-		width: 18%;
 		vertical-align: top;
 	}
 
-	.social-logos li a {
+	.logos li a {
+		background: url(../images/sprite.png) no-repeat;
 		display: block;
-		height: 80px;
-		width: 100px;
+		height: 130px;
+		width: 200px;
 		margin: 0 auto;
 	}
 
-	.social-logos li img {
+	.logos li:nth-of-type(2) a {
+		background-position: -200px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -400px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -600px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -800px 0px;
+	}
+
+	.logos li img {
 		width: 100%
 	}
 
-	.social-logos  li:first-of-type a {
-		margin-top: 16px;
-		width: 130px;
-	}
-
-	.social-logos li p {
-		margin-bottom: 5px;
+	.logos li p {
+		margin-bottom: 0;
 	}

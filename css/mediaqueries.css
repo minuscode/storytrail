@@ -34,89 +34,6 @@
 /*--------------------------------------------------------------
 2.0 - Mobile
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-	/* Landing */
-	.main-container {
-		background-attachment: url(../images/home_bg_small.jpg);
-	}
-
-	.video-container {
-		width: 90%;
-		height: auto;
-	}
-
-	.slide-down {
-		background-size: 464px;
-		background-position: -222px -300px;
-		width: 60px;
-		height: 40px
-	}
-
-	.bottom-content {
-    height: 40px;
-	}
-
-	.landing-logos, .applestore-link {
-		margin-top: -30px;
-	}
-
-	/* Slider */
-	.info-slider-container {
-		padding-top: 0px;
-	}
-
-	.info-slider {
-    width: 100%;
-	}
-
-	/* Social logos */
-	.social-logos li {
-    width: 25%;
-	}
-
-	.social-logos li:first-of-type  {
-    display: block;
-    margin: 0px auto;
-	}
-
-	.social-logos  li:first-of-type a {
-		margin-top: 16px;
-		width: 130px;
-	}
-}
-
-@media screen and (max-width: 568px) {
-	/* Landing */
-	.home-intro {
-		height: 320px;
-	}
-
-	.intro-logo img {
-		width: 200px;
-	}
-
-	.intro-text {
-		margin: 0 auto;
-	}
-
-	.video-link {
-		height: 20%;
-		width: auto;
-	}
-
-	.video-link img {
-		width: auto;
-		height: 100%;
-		max-width: 80px;
-		max-height: 80px;
-	}
-
-	/* Slider */
-	.content-list .upper {
-		font-size: 8px;
-	}
-}
-
 @media screen and (max-width: 480px) {
 	/* Landing */
 	.home-intro {
@@ -128,25 +45,12 @@
 		margin: 0% auto;
 	}
 
-	.video-link img {
-	}
-
 	.video-link span {
 		display: none;
 	}
 
 	.landing-logos, .applestore-link {
 		display: none;
-	}
-
-	/* Content dividers */
-	.info-subcontainer, .quotes-subcontainer {
-		padding: 20px 10px;
-		width: 100%;
-	}
-
-	.info-subcontainer .text, .info-subcontainer .textMT {
-    width: 90%;
 	}
 
 	/* Slider */
@@ -229,50 +133,6 @@
     margin: 0px 4px;
 	}
 
-	/* Quotes */
-	.quotes-subcontainer{
-		font-size: 13px;
-	}
-
-	.quote q {
-    font-size: 16px;
-    margin-bottom: 15px;
-	}
-
-	/* Partners */
-	.partners-logos li {
-    display: block;
-    height: 70px;
-    width: 200px;
-    margin: 0 auto 15px;
-	}
-
-	.partners-logos li:first-of-type {
-    background-position: 10px -390px;
-	}
-
-	.partners-logos li:nth-of-type(2) {
-    background-position: -190px -395px;
-	}
-
-	.partners-logos li:nth-of-type(3) {
-    background-position: -387px -390px;
-	}
-
-	/* Story tellers */
-	.faces-icon {
-		position: relative;
-		left: 0;
-		top: 0;
-		margin: 0 auto;
-		height: 80px;
-		background-position: -428px -195px;
-	}
-
-	.story-tellers p:nth-of-type(2) {
-		margin-bottom: 15px;
-	}
-
 	/* Social logos */
 	.social-logos li, .social-logos li:first-of-type {
 		width: 100%;
@@ -288,86 +148,335 @@
 	}
 }
 
-/* Portrait */
-@media screen and (min-width: 480px) and (max-width: 568px) {
-	/* Landing */
-	.intro-text {
-		font-size: 20px;
-	}
-}
-
-/* Landscape */
-@media screen and (min-width: 321px) and (max-width: 568px) {
-	/* Landing */
-	.intro-logo {
-		height: auto;
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	.info-container {
+		padding-bottom: 52px;
 	}
 
-	.image {
-		left: 4%;
+	/* 3.4.1 - Slider section */
+	.info-slider-container {
+		height: 255px;
 	}
-}
 
-/*--------------------------------------------------------------
-3.0 - Tablet
---------------------------------------------------------------*/
+	.top-logo {
+		width: 40px;
+		height: 36px;
+	}
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-	/* Slider */
+	.nav-arrow {
+		width: 90px;
+		height: 90px;
+	}
+
 	.info-slider {
-		height: 410px;
-		margin-top: 105px;
-		margin-bottom: 105px;
-	}
-
-	.slide-content {
-		padding-top: 20px;
-	}
-
-	.slide-content {
-		width: 45%;
-		right: 6%;
-	}
-
-	.slide-content ul {
-		height: 90%;
+		width: 300px;
 	}
 
 	.image {
-		width: 40%;
-		left: 12%;
-	}
-
-	.phone {
-		width: 190px;
-		left: 33px;
-		background-position: 0px 23px;
-    background-size: 438px auto;
-	}
-
-	.phone-container {
-    width: 164px;
-    left: 43px;
+		width: 130px;
 	}
 
 	.phone-container ul {
-		top: 83px;
+		top: 42px;
+		left: 10px;
+		width: 110px;
+		height: 165px;
 	}
 
-	/* Social Logos */
-	.social-logos li:first-of-type a {
-		margin-top: 0px;
-		margin-bottom: 25px;
+	.phone-container li {
+		width: 110px;
 	}
 
-	.info-subcontainer, .quotes-subcontainer {
-		padding: 45px 0;
+	.slide-content {
+		width: 122px;
+	}
+
+	.slide-content .title {
+		font-size: 15px;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 12px;
+	}
+
+	.content-list .upper {
+		font-size: 7px;
+	}
+
+	.slider-nav a {
+		width: 5px;
+		height: 5px;
+	}
+
+	.logos li a {
+		background-size: auto 52px;
+		height: 52px;
+		width: 80px;
+	}
+
+	.logos li:nth-of-type(2) a {
+		background-position: -80px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -160px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -240px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -320px 0px;
 	}
 }
 
-/*--------------------------------------------------------------
-3.0 - Large screens
---------------------------------------------------------------*/
+@media screen and (min-width: 640px) and (max-width: 767px) {	
+	.info-container {
+		padding-bottom: 65px;
+	}
+
+	/* 3.4.1 - Slider section */
+	.info-slider-container {
+		height: 280px;
+	}
+
+	.top-logo {
+		width: 50px;
+		height: 45px;
+	}
+
+	.nav-arrow {
+		width: 90px;
+		height: 90px;
+	}
+
+	.info-slider {
+		width: 400px;
+	}
+
+	.image {
+		width: 162px;
+	}
+
+	.phone-container ul {
+		top: 54px;
+		left: 12px;
+		width: 138px;
+		height: 204px;
+	}
+
+	.phone-container li {
+		width: 138px;
+	}
+
+	.slide-content {
+		width: 154px;
+	}
+
+	.slide-content .title {
+		font-size: 18px;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 15px;
+	}
+
+	.content-list .upper {
+		font-size: 8px;
+	}
+
+	.slider-nav a {
+		width: 6px;
+		height: 6px;
+	}
+
+	.logos li a {
+		background-size: auto 65px;
+		height: 65px;
+		width: 100px;
+	}
+
+	.logos li:nth-of-type(2) a {
+		background-position: -100px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -200px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -300px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -400px 0px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* 3.4.1 - Slider section */
+	.info-slider-container {
+		height: 410px;
+	}
+
+	.top-logo {
+		width: 62px;
+		height: 60px;
+	}
+
+	.nav-arrow {
+		width: 90px;
+		height: 90px;
+	}
+
+	.info-slider {
+		width: 500px;
+	}
+
+	.image {
+		width: 210px;
+	}
+
+	.phone-container ul {
+		top: 70px;
+		left: 16px;
+		width: 178px;
+		height: 265px;
+	}
+
+	.phone-container li {
+		width: 178px;
+	}
+
+	.slide-content {
+		width: 200px;
+	}
+
+	.slide-content .title {
+		font-size: 23px;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 19px;
+	}
+
+	.content-list .upper {
+		font-size: 10px;
+	}
+
+	.slider-nav a {
+		width: 8px;
+		height: 8px;
+	}
+
+	.logos li a {
+		background-size: auto 85px;
+		height: 85px;
+		width: 130px;
+	}
+
+	.logos li:nth-of-type(2) a {
+		background-position: -130px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -260px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -390px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -520px 0px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+	/* 3.4 - Info Container */
+	.info-container {
+		padding-bottom: 110px;
+	}
+
+	/* 3.4.1 - Slider section */
+	.info-slider-container {
+		height: 540px;
+	}
+
+	.top-logo {
+		width: 83px;
+		height: 76px;
+	}
+
+	.nav-arrow {
+		width: 90px;
+		height: 90px;
+	}
+
+	.info-slider {
+		width: 600px;
+	}
+
+	.image {
+		width: 275px;
+	}
+
+	.phone-container ul {
+		top: 92px;
+		left: 22px;
+		width: 232px;
+		height: 345px;
+	}
+
+	.phone-container li {
+		width: 232px;
+	}
+
+	.slide-content {
+		width: 262px;
+	}
+
+	.slide-content .title {
+		font-size: 31px;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 25px;
+	}
+
+	.content-list .upper {
+		font-size: 14px;
+	}
+
+	.slider-nav a {
+		width: 10px;
+		height: 10px;
+	}
+
+	.logos li a {
+		background-size: auto 110px;
+		height: 110px;
+		width: 170px;
+	}
+
+	.logos li:nth-of-type(2) a {
+		background-position: -170px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -340px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -510px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -680px 0px;
+	}
+}
+
 @media screen and (min-width: 1620px) {
 	/* Main Content */
 	.main-container {
