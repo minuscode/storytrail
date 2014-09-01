@@ -104,7 +104,7 @@ $(document).ready(function(){
   function slideForward() {
     var width = $('.content-list li').width();
     var phoneWidth = $('.phone-container li').width();
-    $('.content-list .active').animate({'left': -width }, 200, function () {
+    $('.content-list .active').animate({'left': '-100%' }, 200, function () {
       $(this).removeClass('active');
 
       var $size = $('.content-list li').length - 1;
@@ -120,7 +120,7 @@ $(document).ready(function(){
     var $elem = $('.phone-list .active').index() == $size ? $('.phone-list li:first-child') : $('.phone-list .active').next();
     var $nextelem = $elem.index() == $size ? $('.phone-list li:first-child') : $elem.next();
     
-    $('.phone-list .active').animate({'left': -phoneWidth }, 200, function () {
+    $('.phone-list .active').animate({'left': '-100%' }, 200, function () {
       $(this).removeClass('active');
       $elem.animate({'left': '0px' }, 200).addClass('active');
     });
@@ -134,7 +134,7 @@ $(document).ready(function(){
   function slideBack() {
     var width = $('.content-list li').width();
     var phoneWidth = $('.phone-container li').width();
-    $('.content-list .active').animate({'left': width }, 200, function () {
+    $('.content-list .active').animate({'left': '100%' }, 200, function () {
       $(this).removeClass('active');
 
       var $size = $('.content-list li').length - 1;
