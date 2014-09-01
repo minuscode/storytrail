@@ -62,7 +62,6 @@ a {
 .main-container {
 	position: relative;
 	height: 100%;
-	min-height: 620px;
 	background: url(../images/WEB_home_BG.jpg) no-repeat #000;
 	background-size: cover;
 	background-position: center;
@@ -201,9 +200,7 @@ a {
 .info-container {
 	position: relative;
 	height: 100%;
-	min-height: 700px;
-	margin-top: 80px;
-	margin-bottom: 150px;
+	min-height: 900px;
 }
 
 	/* 3.4.1 - Slider section */
@@ -213,7 +210,7 @@ a {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		height: 640px;
+		height: 580px;
 		max-width: 1000px;
 		margin: auto;
 	}
@@ -224,7 +221,7 @@ a {
 		position: absolute;
 		right: 0;
 		left: 0;
-		bottom: 100%;
+		top: 0;
 		display: block;
 		width: 97px;
 		height: 89px;
@@ -243,15 +240,17 @@ a {
 	.nav-arrow {
 		background-size: 100%;
 		position: absolute;
-		top: 40%;
+		top: 0;
+		bottom: 0;
 		width: 90px;
 		height: 90px;
+		margin: auto;
 		z-index: 9;
 	}
 
 	.info-slider {
 		position: relative;
-		width: 760px;
+		width: 650px;
 		height: 100%;
 		margin: auto;
 		overflow: hidden;
@@ -260,12 +259,11 @@ a {
 	.image, .slide-content {
 		position: absolute;
 		text-align: center;
-		height: 100%;
-		vertical-align: top;
+		height: 540px;
 	}
 
 	.image {
-		width: 325px;
+		width: 275px;
 		left: 0;
 		z-index: 1;
 	}
@@ -288,10 +286,10 @@ a {
 
 	.phone-container ul {
 		position: absolute;
-		top: 108px;
-		left: 26px;
-		width: 273px;
-		height: 410px;
+		top: 92px;
+		left: 22px;
+		width: 230px;
+		height: 346px;
 		overflow: hidden;
 	}
 
@@ -315,15 +313,21 @@ a {
 		text-align: center;
 	}
 
+	.content-list li {
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		height: 375px;
+	}
+
 	.phone-container img {
 		width: 100%
 	}
 
 	.slide-content {
 		overflow: hidden;
-		width: 330px;
+		width: 275px;
 		right: 0;
-		padding: 70px 30px 20px;
 	}
 
 	.slide-content ul {
@@ -333,8 +337,7 @@ a {
 	.slide-content .title {
 		font-family: 'Futura-Medium';
 		text-transform: uppercase;
-		font-size: 36px;
-		width: 300px;
+		font-size: 31px;
 		margin: 0 auto 50px;
 		color: #231f20;
 	}
@@ -343,7 +346,7 @@ a {
 		color: #808284;
 		margin-top: 20px;
 		margin-bottom: 50px;
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	.info-slider .applestore-link {
@@ -351,13 +354,13 @@ a {
 		top: 0;
 		right: 0;
 		display: block;
-		width: 310px;
-		height: 90px;
-		margin: 20px auto 50px;
+		width: 262px;
+		height: 78px;
+		margin: 0 auto 50px;
 	}
 
 	.content-list .upper {
-		font-size: 16px;
+		font-size: 14px;
 		font-family: 'Futura-Medium';
 		text-transform: uppercase;
 	}
@@ -371,12 +374,13 @@ a {
 
 	.slider-nav li {
 		display: inline-block;
+		margin: 0 3px;
 	}
 
 	.slider-nav a {
 		display: block;
-		width: 12px;
-		height: 12px;
+		width: 10px;
+		height: 10px;
 		border-radius: 50%;
 		background-color: #999;
 	}
@@ -387,7 +391,7 @@ a {
 
 	.logos-container {
 		position: absolute;
-		top: 100%;
+		bottom: 0;
 		width: 100%;
 		font-size: 16px;
 	}
@@ -405,26 +409,27 @@ a {
 
 	.logos li a {
 		background: url(../images/sprite.png) no-repeat;
+		background-size: auto 100%;
 		display: block;
-		height: 130px;
-		width: 200px;
+		height: 110px;
+		width: 170px;
 		margin: 0 auto;
 	}
 
 	.logos li:nth-of-type(2) a {
-		background-position: -200px 0px;
+		background-position: -170px 0px;
 	}
 
 	.logos li:nth-of-type(3) a {
-		background-position: -400px 0px;
+		background-position: -340px 0px;
 	}
 
 	.logos li:nth-of-type(4) a {
-		background-position: -600px 0px;
+		background-position: -510px 0px;
 	}
 
 	.logos li:nth-of-type(5) a {
-		background-position: -800px 0px;
+		background-position: -680px 0px;
 	}
 
 	.logos li img {
