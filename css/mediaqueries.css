@@ -45,8 +45,8 @@
 	}
 
 	.top-logo {
-		width: 40px;
-		height: 36px;
+		width: 82px;
+		height: 82px;
 	}
 
 	.nav-arrow {
@@ -217,6 +217,11 @@
 		width: 96px;
 		height: 28px;
 	}
+
+	.nav-arrow {
+		width: 74px;
+		height: 74px;
+	}
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {	
@@ -260,13 +265,13 @@
 	}
 
 	.top-logo {
-		width: 50px;
-		height: 45px;
+		width: 104px;
+		height: 104px;
 	}
 
 	.nav-arrow {
-		width: 90px;
-		height: 90px;
+		width: 93px;
+		height: 93px;
 	}
 
 	.info-slider {
@@ -378,9 +383,14 @@
 		height: 470px;
 	}
 
+	.top-logo {
+		width: 132px;
+		height: 132px;
+	}
+
 	.nav-arrow {
-		width: 90px;
-		height: 90px;
+		width: 120px;
+		height: 120px;
 	}
 
 	.info-slider {
@@ -591,6 +601,11 @@
     width: 100%;
 	}
 
+	.top-logo {
+		width: 192px;
+		height: 192px;
+	}
+
 	.phone {
 		width: 360px;
 		left: auto;
@@ -654,8 +669,8 @@
 
 	.nav-arrow {
     background: url(../images/sprite@2x.png) no-repeat;
-    width: 90px;
-    height: 100px;
+    width: 186px;
+    height: 186px;
     background-size: 745px;
 	}
 

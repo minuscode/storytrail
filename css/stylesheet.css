@@ -223,8 +223,8 @@ a {
 		left: 0;
 		top: 0;
 		display: block;
-		width: 97px;
-		height: 89px;
+		width: 175px;
+		height: 175px;
 		margin: auto;
 	}
 
@@ -242,8 +242,8 @@ a {
 		position: absolute;
 		top: 0;
 		bottom: 0;
-		width: 90px;
-		height: 90px;
+		width: 160px;
+		height: 160px;
 		margin: auto;
 		z-index: 9;
 	}
@@ -286,9 +286,9 @@ a {
 
 	.phone-container ul {
 		position: absolute;
-		top: 92px;
-		left: 22px;
-		width: 230px;
+		top: 91px;
+		left: 21px;
+		width: 232px;
 		height: 346px;
 		overflow: hidden;
 	}

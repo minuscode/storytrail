@@ -94,10 +94,6 @@ $(document).ready(function(){
         if(!isSliderRunning) {
           clearInterval(slide);
           slide = setInterval(slideForward, 7000);
-          $(window).on('resize', function(){
-            clearInterval(slide);
-            slide = setInterval(slideForward, 7000);
-          });
           isSliderRunning = true;
         }
       }
@@ -183,6 +179,7 @@ $(document).ready(function(){
   $('.slider-nav a').on('click', function(e) {
     e.preventDefault();
     clearInterval(slide);
+    var width = $('.content-list li').width();
     var linkIndex = $(this).parent().index();
     var slideIndex = $('.content-list .active').index();
 
@@ -233,13 +230,9 @@ $(document).ready(function(){
 
     deferSetup : true,
     setup : function() {
-      // load content via AJAX
     },
     match : function() {
       autoScroll();
-      $(window).on('resize', function() {
-        autoScroll();
-      });
     },
     unmatch : function() {
     }  
@@ -249,9 +242,9 @@ $(document).ready(function(){
 
     deferSetup : true,
     setup : function() {
-      // load content via AJAX
     },
     match : function() {
+      clearInterval(slide);
       slide = setInterval(slideForward, 7000);
       $('.info-slider').swipe({
         swipe:function(event, direction, distance, duration, fingerCount) {
