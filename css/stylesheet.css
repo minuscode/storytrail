@@ -62,6 +62,7 @@ a {
 .main-container {
 	position: relative;
 	height: 100%;
+	min-height: 630px;
 	background: url(../images/WEB_home_BG.jpg) no-repeat #000;
 	background-size: cover;
 	background-position: center;
