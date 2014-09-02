@@ -133,7 +133,7 @@
 @media screen and (max-width: 480px) {	
 	/* 3.1 - Main Content */
 	.main-container {
-		min-height: inherit;
+		min-height: 360px;
 	}
 
 	.home-intro {
@@ -397,6 +397,12 @@
 	}
 }
 
+@media only screen and (max-device-width : 480px) {
+	.main-container {
+		min-height: inherit;
+	}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	/* 3.4.1 - Slider section */
 	.main-container {
@@ -628,7 +634,7 @@
 
 	/* 3.4.1 - Slider section */
 	.info-container {
-		min-height: 960px;
+		min-height: 1080px;
 	}
 
 	.info-slider-container {
