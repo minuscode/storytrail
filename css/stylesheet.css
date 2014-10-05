@@ -62,7 +62,6 @@ a {
 .main-container {
 	position: relative;
 	height: 100%;
-	min-height: 630px;
 	background: url(../images/WEB_home_BG.jpg) no-repeat #000;
 	background-size: cover;
 	background-position: center;
@@ -259,7 +258,6 @@ a {
 
 	.image, .slide-content {
 		position: absolute;
-		text-align: center;
 		height: 540px;
 	}
 
@@ -287,10 +285,10 @@ a {
 
 	.phone-container ul {
 		position: absolute;
-		top: 91px;
-		left: 21px;
-		width: 232px;
-		height: 346px;
+		top: 62px;
+		left: 24px;
+		width: 227px;
+		height: 404px;
 		overflow: hidden;
 	}
 
@@ -311,7 +309,6 @@ a {
 		position: absolute;
 		left: 100%;
 		width: 100%;
-		text-align: center;
 	}
 
 	.content-list li {
@@ -337,27 +334,31 @@ a {
 
 	.slide-content .title {
 		font-family: 'Futura-Medium';
-		text-transform: uppercase;
-		font-size: 31px;
-		margin: 0 auto 50px;
-		color: #231f20;
+		font-size: 92px;
+		color: #ebebec;
+		text-align: left;
 	}
 
 	.slide-content p:nth-of-type(2) {
-		color: #808284;
-		margin-top: 20px;
+		color: #333;
 		margin-bottom: 50px;
+		font-size: 35px;
+		font-weight: bold;
+	}
+
+	.slide-content p:nth-of-type(2) span {
+		display: block;
 		font-size: 25px;
+		color: #4d4d4d;
 	}
 
 	.info-slider .applestore-link {
 		position: relative;
-		top: 0;
-		right: 0;
+		right: auto;
+		margin: 0;
 		display: block;
-		width: 262px;
-		height: 78px;
-		margin: 0 auto 50px;
+		width: 168px;
+		height: 50px;
 	}
 
 	.content-list .upper {
@@ -431,6 +432,10 @@ a {
 
 	.logos li:nth-of-type(5) a {
 		background-position: -680px 0px;
+	}
+
+	.logos li:nth-of-type(6) a {
+		background-position: -850px 0px;
 	}
 
 	.logos li img {

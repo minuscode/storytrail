@@ -102,8 +102,6 @@ $(document).ready(function(){
 
   // Auto Slider Carousel
   function slideForward() {
-    var width = $('.content-list li').width();
-    var phoneWidth = $('.phone-container li').width();
     $('.content-list .active').animate({'left': '-100%' }, 200, function () {
       $(this).removeClass('active');
 
@@ -132,8 +130,6 @@ $(document).ready(function(){
   }
 
   function slideBack() {
-    var width = $('.content-list li').width();
-    var phoneWidth = $('.phone-container li').width();
     $('.content-list .active').animate({'left': '100%' }, 200, function () {
       $(this).removeClass('active');
 
@@ -150,7 +146,7 @@ $(document).ready(function(){
     var $elem = $('.phone-list .active').index() == 0 ? $('.phone-list li:last-of-type') : $('.phone-list .active').prev();
     var $nextelem = $elem.index() == 0 ? $('.phone-list li:last-of-type') : $elem.prev();
     
-    $('.phone-list .active').animate({'left': phoneWidth }, 200, function () {
+    $('.phone-list .active').animate({'left': '100%' }, 200, function () {
       $(this).removeClass('active');
       $elem.animate({'left': '0px' }, 200).addClass('active');
     });
@@ -226,7 +222,7 @@ $(document).ready(function(){
 
 
   // Javascript Media queries
-  enquire.register("screen and (min-width:481px)", {
+  enquire.register("screen and (min-width:769px)", {
 
     deferSetup : true,
     setup : function() {
@@ -247,7 +243,8 @@ $(document).ready(function(){
       clearInterval(slide);
       slide = setInterval(slideForward, 7000);
       $('.info-slider').swipe({
-        swipe:function(event, direction, distance, duration, fingerCount) {
+        allowPageScroll:"vertical",
+        swipe:function(event, direction) {
           clearInterval(slide);
           if(direction == 'left') {
             slideForward();
@@ -255,6 +252,9 @@ $(document).ready(function(){
           } else if(direction == 'right'){
             slideBack();
             slide = setInterval(slideForward, 7000);
+          } else if(direction == 'up'){
+            $(window).scroll();
+          } else {
           }
         }
       });
