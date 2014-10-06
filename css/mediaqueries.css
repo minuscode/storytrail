@@ -567,7 +567,7 @@
 		background-attachment: url(../images/home_bg_big.jpg);
 	}
 
-	.home-intro {
+	/*.home-intro {
 		width: 740px;
 		height: 940px;
 	}
@@ -603,7 +603,7 @@
 	.applestore-link {
 		width: 240px;
 		height: 70px;
-	}
+	}*/
 
 	/* 3.4.1 - Slider section */
 	.info-container {
@@ -634,7 +634,7 @@
 	}
 
 	.phone-container ul {
-		top: 76px;
+		top: 74px;
 		left: 29px;
 		width: 268px;
 		height: 494px;
