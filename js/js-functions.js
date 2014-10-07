@@ -60,6 +60,17 @@ $(document).ready(function(){
     });
   }); 
 
+  // White Mask
+  $('.js-modal').on('click', function(e) {
+    e.preventDefault();
+    $('#white-mask').fadeIn();
+  });
+
+  $('.back-btn').on('click', function(e) {
+    e.preventDefault();
+    $('#white-mask').fadeOut();
+  });
+
   // Slide down button
   $('.slide-down').on( 'click', function(e) {
     e.preventDefault();
