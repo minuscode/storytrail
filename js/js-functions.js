@@ -186,17 +186,17 @@ $(document).ready(function(){
   $('.slider-nav a').on('click', function(e) {
     e.preventDefault();
     clearInterval(slide);
-    var width = $('.content-list li').width();
-    var linkIndex = $(this).parent().index();
-    var slideIndex = $('.content-list .active').index();
+    var size = $('.content-list li').length,
+        linkIndex = $(this).parent().index(),
+        slideIndex = $('.content-list .active').index();
 
     if(linkIndex > slideIndex) {
-      if ((linkIndex-slideIndex) == 2) {
-        $('.content-list .active, .phone-list .active').animate({'left': -width }, 200, function () {
+      if ((linkIndex-slideIndex) == size) {
+        $('.content-list .active, .phone-list .active').animate({'left': '-100%' }, 200, function () {
           $(this).removeClass('active');
-          $('.content-list li:last-of-type, .phone-list li:last-of-type').css('left', width);
-          $(this).next().animate({'left': -width }, 200, function () {
-            $(this).prev().css('left', width);
+          $('.content-list li:last-of-type, .phone-list li:last-of-type').css('left', '100%');
+          $(this).next().animate({'left': '-100%' }, 200, function () {
+            $(this).prev().css('left', '100%');
             $('.content-list li:last-of-type, .phone-list li:last-of-type').addClass('active').animate({'left': 0 });
           });
 
@@ -210,12 +210,12 @@ $(document).ready(function(){
       }
 
     } else if (linkIndex < slideIndex) {
-      if ((slideIndex-linkIndex) == 2) {
-        $('.content-list .active, .phone-list .active').animate({'left': width }, 200, function () {
+      if ((slideIndex-linkIndex) == size) {
+        $('.content-list .active, .phone-list .active').animate({'left': '100%' }, 200, function () {
           $(this).removeClass('active');
-          $('.content-list li:first-of-type, .phone-list li:first-of-type').css('left', -width);
-          $(this).prev().animate({'left': width }, 200, function () {
-            $(this).next().css('left', width);
+          $('.content-list li:first-of-type, .phone-list li:first-of-type').css('left', '-100%');
+          $(this).prev().animate({'left': '100%' }, 200, function () {
+            $(this).next().css('left', '100%');
             $('.content-list li:first-of-type, .phone-list li:first-of-type').addClass('active').animate({'left': 0 });
           });
 
