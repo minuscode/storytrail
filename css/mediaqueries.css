@@ -451,9 +451,9 @@
 	}
 
 	.logos li a {
-		background-size: auto 85px;
-		height: 85px;
-		width: 130px;
+		background-size: auto 80px;
+		height: 80px;
+		width: 122px;
 	}
 
 	.logos li:nth-of-type(2) a {
@@ -692,21 +692,179 @@
 }
 
 @media screen and (max-height: 479px) {
+
+	.info-container {
+		min-height: inherit;
+	}
+
+	.nav-arrow {
+		width: 100px;
+		height: 100px;
+	}
+
+	.image, .slide-content {
+		height: 192px;
+	}
+
 	.image {
-		width: 112px;
-		height: 215px;
+		width: 100px;
+		left: 150px;
 	}
 
 	.phone-container ul {
-		top: 25px;
-		left: 10px;
-		width: 92px;
-		height: 165px;
+		top: 22px;
+		left: 9px;
+		width: 83px;
+		height: 148px;
+	}
+
+	.phone-container li {
+		width: 100%;
 	}
 
 	.info-slider-container {
-		height: 240px;
-		bottom: 65px;
+		height: 220px;
+		bottom: 80px;
+	}
+
+	.info-slider {
+		width: 570px;
+	}
+
+	.content-list li {	
+		height: 150px;
+	}
+
+	.slide-content .title {
+		font-size: 38px;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 20px;
+		margin-bottom: 35px;
+	}
+
+	.slide-content p:nth-of-type(2) span {
+		font-size: 14px;
+	}
+
+	.info-slider .applestore-link {
+		width: 100px;
+		height: 30px;
+	}
+
+	.slider-nav a {	
+		width: 8px;
+		height: 8px;
+	}
+
+	.logos-container {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (max-height: 479px) {
+	.slide-content {
+		width: 275px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 479px) {
+	.logos li a {
+		height: 65px;
+		width: 100px;
+	}
+
+	.logos li:nth-of-type(2) a {
+		background-position: -200px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -200px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -300px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -400px 0px;
+	}
+
+	.logos li:nth-of-type(6) a {
+		background-position: -500px 0px;
+	}
+}
+
+@media screen and (max-width: 580px) and (max-height: 479px) {
+	.info-slider-container {
+		bottom: 130px;
+	}
+
+	.info-slider {
+		width: 300px;
+	}
+
+	.image, .slide-content {
+		width: 130px;
+		height: 192px;
+	}
+
+	.image {
+		width: 100px;
+		left: 40px;
+	}
+
+	.phone-container ul {
+		top: 23px;
+		left: 9px;
+		width: 82px;
+		height: 148px;
+	}
+
+	.content-list li {
+		height: 150px;
+	}
+
+	.slide-content .title {
+		font-size: 36px;
+	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.slider-nav a {
+		width: 6px;
+		height: 6px;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-height: 479px) {
+	.logos li a {
+		height: 65px;
+		width: 100px;
+	}
+
+	.logos li:nth-of-type(2) a {
+		background-position: -100px 0px;
+	}
+
+	.logos li:nth-of-type(3) a {
+		background-position: -200px 0px;
+	}
+
+	.logos li:nth-of-type(4) a {
+		background-position: -300px 0px;
+	}
+
+	.logos li:nth-of-type(5) a {
+		background-position: -400px 0px;
+	}
+
+	.logos li:nth-of-type(6) a {
+		background-position: -500px 0px;
 	}
 }
 
@@ -747,6 +905,11 @@
 /* Bottom section */
 	.info-container {
 		min-height: 480px;
+	}
+
+	.nav-arrow {
+		width: 130px;
+		height: 130px;
 	}
 
 	.image, .slide-content {
@@ -893,28 +1056,28 @@
 	}
 
 	.logos li a {
-		height: 65px;
-		width: 100px;
+		height: 80px;
+		width: 122px;
 	}
 
 	.logos li:nth-of-type(2) a {
-		background-position: -100px 0px;
+		background-position: -122px 0px;
 	}
 
 	.logos li:nth-of-type(3) a {
-		background-position: -200px 0px;
+		background-position: -244px 0px;
 	}
 
 	.logos li:nth-of-type(4) a {
-		background-position: -300px 0px;
+		background-position: -366px 0px;
 	}
 
 	.logos li:nth-of-type(5) a {
-		background-position: -400px 0px;
+		background-position: -488px 0px;
 	}
 
 	.logos li:nth-of-type(6) a {
-		background-position: -500px 0px;
+		background-position: -610px 0px;
 	}
 }
 
@@ -976,8 +1139,8 @@
 	}
 
 	.logos li a {
-		height: 85px;
-		width: 130px;
+		height: 80px;
+		width: 122px;
 	}
 
 	.logos li:nth-of-type(2) a {
@@ -1003,7 +1166,7 @@
 
 @media screen and (min-width: 1600px) and (min-height: 340px) and (max-height: 479px) {
 	.image {
-		left: 130px;
+		left: 170px;
 	}
 
 	.slide-content {
@@ -1030,6 +1193,10 @@
 }
 
 @media screen and (min-width: 1600px) and (min-height: 601px) and (max-height: 800px) {
+	.info-slider {
+		width: 650px;
+	}
+
 	.image {
 		left: 130px;
 	}
@@ -1044,6 +1211,10 @@
 }
 
 @media screen and (min-width: 1600px) and (min-height: 801px) and (max-height: 980px) {
+	.info-slider {
+		width: 650px;
+	}
+
 	.image {
 		left: 130px;
 	}
