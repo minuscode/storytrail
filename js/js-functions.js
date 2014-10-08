@@ -205,7 +205,48 @@ $(document).ready(function(){
         });
         slide = setInterval(slideForward, 7000);
       } else {
-        slideForward();
+        var clickedElem = $('.content-list li')[linkIndex],
+            clickedElemPhone = $('.phone-list li')[linkIndex];
+
+        $('.content-list .active').animate({'left': '-100%' }, 200, function () {
+          $(this).removeClass('active');
+
+          var $size = $('.content-list li').length - 1;
+
+          if((linkIndex - $(this).index()) > 1) {
+            var $elem = clickedElem;
+          } else {
+            var $elem = $(this).index() == $size ? $('.content-list li:first-child') : $(this).next();
+          }
+
+          $($elem).css('left', '100%');
+          $($elem).addClass('active').animate({'left': '0px' }, 200);
+          var $nextelem = $($elem).index() == $size ? $('.content-list li:first-child') : $($elem).next();
+          $nextelem.css('left', '100%');
+        });
+
+        // Phone section
+        var $size = $('.phone-list li').length - 1;
+
+        if((linkIndex - $(this).index()) > 1) {
+          var $elem = clickedElemPhone;
+        } else {
+          var $elem = $('.phone-list .active').index() == $size ? $('.phone-list li:first-child') : $('.phone-list .active').next();
+        }
+
+        var $nextelem = $($elem).index() == $size ? $('.phone-list li:first-child') : $($elem).next();
+        
+        $($elem).css('left', '100%');
+        $('.phone-list .active').animate({'left': '-100%' }, 200, function () {
+          $(this).removeClass('active');
+          $($elem).animate({'left': '0px' }, 200).addClass('active');
+        });
+        $nextelem.css('left', '100%');
+
+        $('.slider-nav a').removeClass('active');
+        var $navLink = $('.slider-nav li')[$($elem).index()];
+        $('a', $navLink).addClass('active');
+
         slide = setInterval(slideForward, 7000);
       }
 
@@ -224,7 +265,49 @@ $(document).ready(function(){
         });
         slide = setInterval(slideForward, 7000);
       } else {
-        slideBack()
+        var clickedElem = $('.content-list li')[linkIndex],
+            clickedElemPhone = $('.phone-list li')[linkIndex],
+            $activeIndex = $('.phone-list .active').index();
+
+        $('.content-list .active').animate({'left': '100%' }, 200, function () {
+          $(this).removeClass('active');
+
+          var $size = $('.content-list li').length - 1;
+
+          if(($activeIndex - linkIndex) > 1) {
+            var $elem = clickedElem;
+          } else {
+            var $elem = $(this).index() == 0 ? $('.content-list li:last-of-type') : $(this).prev();
+          }
+
+          $($elem).css('left', '-100%');
+          $($elem).addClass('active').animate({'left': '0px' }, 200);
+          var $nextelem = $($elem).index() == 0 ? $('.content-list li:last-of-type') : $($elem).prev();
+          $($nextelem).css('left', '-100%');
+        });
+
+        // Phone section
+        var $size = $('.phone-list li').length - 1;
+
+        if(($activeIndex - linkIndex) > 1) {
+          var $elem = clickedElemPhone;
+        } else {
+          var $elem = $('.phone-list .active').index() == 0 ? $('.phone-list li:last-of-type') : $('.phone-list .active').prev();
+        }
+
+        var $nextelem = $($elem).index() == 0 ? $('.phone-list li:last-of-type') : $($elem).prev();
+        
+        $($elem).css('left', '-100%');
+        $('.phone-list .active').animate({'left': '100%' }, 200, function () {
+          $(this).removeClass('active');
+          $($elem).animate({'left': '0px' }, 200).addClass('active');
+        });
+        $($nextelem).css('left', '-100%');
+
+        $('.slider-nav a').removeClass('active');
+        var $navLink = $('.slider-nav li')[$($elem).index()];
+        $('a', $navLink).addClass('active');
+
         slide = setInterval(slideForward, 7000);
       }
     }
