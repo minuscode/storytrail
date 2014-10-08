@@ -412,7 +412,7 @@
 
 	.image, .slide-content {
 		height: 410px;
-		width: 250px;
+		width: 210px;
 	}
 
 	.phone-container ul {
@@ -1133,13 +1133,13 @@
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
   .image {
-		left: 120px;
+		left: 130px;
 	}
 }
 
 @media screen and (min-width: 1024px) and (max-height: 480px) {
   .image {
-		left: 150px;
+		left: 165px;
 	}
 }
 
@@ -1261,11 +1261,11 @@
 
 @media screen and (min-width: 1600px) and (min-height: 480px) and (max-height: 600px) {
 	.image {
-		left: 130px;
+		left: 140px;
 	}
 
 	.slide-content {
-		width: 290px;
+		width: 260px;
 	}
 
 	.logos-container {
