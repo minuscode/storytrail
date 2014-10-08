@@ -783,6 +783,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 479px) {
 	.logos li a {
+		background-size: auto 65px;
 		height: 65px;
 		width: 100px;
 	}
@@ -993,6 +994,7 @@
 	}
 
 	.logos li a {
+		background-size: auto 65px;
 		height: 65px;
 		width: 100px;
 	}
@@ -1307,13 +1309,23 @@
 	}
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+@media only screen and (min-device-height : 600px) and (min-device-width : 768px) and (max-device-width : 1023px) {
 	.info-slider {
 		width: 470px;
 	}
 
-	.image, .slide-content {
+	.image {
+		left: 50px;
+	}
+
+	.slide-content {
 		width: 210px;
+	}
+}
+
+@media only screen and (min-device-height : 800px) and (min-device-width : 768px) and (max-device-width : 1023px) {
+	.image {
+		left: 0;
 	}
 }
 
