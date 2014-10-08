@@ -111,6 +111,7 @@ $(document).ready(function(){
     });
   }
 
+  var currentlyAnimating = false;
   // Auto Slider Carousel
   function slideForward() {
     $('.content-list .active').animate({'left': '-100%' }, 200, function () {
@@ -174,13 +175,16 @@ $(document).ready(function(){
     e.preventDefault();
     clearInterval(slide);
 
-    if($(this).hasClass('next')) {
-      slideForward();
-      slide = setInterval(slideForward, 7000);
-    } else {
-      slideBack()
-      slide = setInterval(slideForward, 7000);
+    if(!$('.content-list .active').is(":animated")) {
+      if($(this).hasClass('next')) {
+        slideForward();
+        slide = setInterval(slideForward, 7000);
+      } else {
+        slideBack()
+        slide = setInterval(slideForward, 7000);
+      }
     }
+
   });
 
   $('.slider-nav a').on('click', function(e) {
