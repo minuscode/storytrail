@@ -819,13 +819,13 @@
 	}
 
 	.image, .slide-content {
-		width: 130px;
+		width: 135px;
 		height: 192px;
 	}
 
 	.image {
 		width: 100px;
-		left: 40px;
+		left: 50px;
 	}
 
 	.phone-container ul {
