@@ -1324,7 +1324,6 @@
 }
  
 @media only screen and (max-device-height : 768px) and (min-device-width : 768px) and (max-device-width : 1023px) {
-
 	.image {
 		left: 0;
 	}
