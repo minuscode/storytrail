@@ -1324,8 +1324,16 @@
 }
  
 @media only screen and (min-device-height : 800px) and (min-device-width : 768px) and (max-device-width : 1023px) {
+	.info-slider {
+		width: 470px;
+	}
+
 	.image {
 		left: 0;
+	}
+
+	.slide-content {
+		width: 210px;
 	}
 }
 
