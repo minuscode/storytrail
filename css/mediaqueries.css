@@ -1132,6 +1132,11 @@
 }
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
+	.video-container {
+		width: 620px;
+		height: 340px;
+	}
+
   .image {
 		left: 130px;
 	}
