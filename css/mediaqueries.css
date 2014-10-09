@@ -1309,7 +1309,7 @@
 	}
 }
 
-@media only screen and (min-device-height : 600px) and (min-device-width : 768px) and (max-device-width : 1023px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
 	.info-slider {
 		width: 470px;
 	}
@@ -1320,12 +1320,6 @@
 
 	.slide-content {
 		width: 210px;
-	}
-}
- 
-@media only screen and (max-device-height : 768px) and (min-device-width : 768px) and (max-device-width : 1023px) {
-	.image {
-		left: 0;
 	}
 }
 
