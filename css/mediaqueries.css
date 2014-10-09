@@ -1322,6 +1322,12 @@
 		width: 210px;
 	}
 }
+ 
+@media only screen and (min-device-height : 800px) and (min-device-width : 768px) and (max-device-width : 1023px) {
+	.image {
+		left: 0;
+	}
+}
 
 @media only screen and (min-device-width : 480px) and (max-device-width : 568px) {
 
