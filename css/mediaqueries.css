@@ -664,7 +664,7 @@
 	}
 }
 
-@media screen and (min-height: 340px) and (max-height: 479px) {
+@media screen and (min-height: 340px) and (max-height: 459px) {
 	.home-intro {
 		height: 400px;
 		/*width: 750px;*/
@@ -703,7 +703,7 @@
 	}
 }
 
-@media screen and (max-height: 479px) {
+@media screen and (max-height: 459px) {
 
 	.info-container {
 		min-height: inherit;
@@ -775,13 +775,13 @@
 	}
 }
 
-@media screen and (max-width: 1024px) and (max-height: 479px) {
+@media screen and (max-width: 1024px) and (max-height: 459px) {
 	.slide-content {
 		width: 275px;
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 479px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 459px) {
 	.logos li a {
 		background-size: auto 65px;
 		height: 65px;
@@ -809,7 +809,7 @@
 	}
 }
 
-@media screen and (max-width: 580px) and (max-height: 479px) {
+@media screen and (max-width: 580px) and (max-height: 459px) {
 	.info-slider-container {
 		bottom: 130px;
 	}
@@ -854,7 +854,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px) and (max-height: 479px) {
+@media screen and (min-width: 1024px) and (max-height: 459px) {
 	.logos li a {
 		height: 65px;
 		width: 100px;
@@ -881,7 +881,7 @@
 	}
 }
 
-@media screen and (min-width: 640px) and (min-height: 480px) and (max-height: 600px) {
+@media screen and (min-width: 640px) and (min-height: 460px) and (max-height: 600px) {
 	.home-intro {
 		height: 400px;
 		/*width: 750px;*/
