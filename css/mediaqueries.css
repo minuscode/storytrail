@@ -166,7 +166,9 @@
 	}
 
 	.bottom-content .applestore-link {
-		display: none;
+		width: 90px;
+		height: 26px;
+		bottom: -14px;
 	}
 
 	.slide-down {
