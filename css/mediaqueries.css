@@ -1361,6 +1361,10 @@
 }
 
 @media only screen and (max-device-width : 479px) {
+	.info-slider-container {
+		bottom: 60px;
+	}
+
 	.intro-logo {
 		width: 280px;
 		height: 190px;
