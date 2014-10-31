@@ -60,8 +60,12 @@ $(document).ready(function(){
     });
   }); 
 
+  $('#video').bind('ended', function() {
+    $('#mask, .video-container').fadeOut(600);
+  });
+
   // White Mask
-  $('.js-modal').on('click', function(e) {
+  /*$('.js-modal').on('click', function(e) {
     e.preventDefault();
     $('#white-mask').fadeIn();
   });
@@ -70,6 +74,7 @@ $(document).ready(function(){
     e.preventDefault();
     $('#white-mask').fadeOut();
   });
+*/
 
   // Slide down button
   $('.slide-down').on( 'click', function(e) {
