@@ -1360,7 +1360,7 @@
 	}
 }
 
-@media only screen and (max-device-width : 400px) {
+@media only screen and (max-device-width : 360px) {
 	.info-slider-container {
 		bottom: 60px;
 	}
