@@ -1360,7 +1360,7 @@
 	}
 }
 
-@media only screen and (max-device-width : 360px) {
+@media only screen and (max-device-width : 479px) {
 	.info-slider-container {
 		bottom: 60px;
 	}
@@ -1386,5 +1386,11 @@
 	.slide-down {
 		width: 80px;
 		height: 80px;
+	}
+}
+
+@media only screen and (max-device-height : 459px) {
+	.info-slider-container {
+		bottom: 60px;
 	}
 }
