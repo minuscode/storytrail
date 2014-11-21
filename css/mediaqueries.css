@@ -801,6 +801,11 @@
 	.slide-content {
 		width: 275px;
 	}
+
+	.slide-content p:nth-of-type(2) {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (max-height: 459px) {
@@ -863,11 +868,6 @@
 
 	.slide-content .title {
 		font-size: 36px;
-	}
-
-	.slide-content p:nth-of-type(2) {
-		font-size: 14px;
-		margin-bottom: 10px;
 	}
 
 	.slider-nav a {
@@ -1194,7 +1194,7 @@
 	}
 
 	.slide-content {
-		width: 150px;
+		width: 160px;
 	}
 }
 
@@ -1416,7 +1416,7 @@
 	}
 }
 
-@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) and (min-device-height: 599px) {
 	.info-slider {
 		width: 470px;
 	}
